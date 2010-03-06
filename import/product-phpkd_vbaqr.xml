@@ -19,7 +19,7 @@
 			<installcode><![CDATA[if (!file_exists(DIR . '/includes/xml/bitfield_phpkd_vbaqr.xml') OR !file_exists(DIR . '/clientscript/phpkd_vbaqr.js'))
 {
 	print_dots_stop();
-	print_cp_message('Please upload all files came with "PHPKD - Advanced Quick Reply 'Ultimate'" product before installing or upgrading!');
+	print_cp_message('Please upload all files came with "PHPKD - Advanced Quick Reply \'Ultimate\'" product before installing or upgrading!');
 }
 
 
