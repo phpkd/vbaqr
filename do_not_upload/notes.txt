@@ -1,0 +1,12 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|              Brought to you by PHP KingDom (www.phpkd.net)              |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here you can get the uncompressed JavaScript file, it's just for developer review & not required for the installation or upgrade process.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|              Brought to you by PHP KingDom (www.phpkd.net)              |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+$Version: 4.0.100 $ - $Id: info.txt 5 2010-03-06 11:29:54Z PHPKD $

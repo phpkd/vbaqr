@@ -1,4 +1,6 @@
 * text=auto !eol
+do_not_upload/clientscript/phpkd_vbaqr.js -text svneol=unset#text/plain
+do_not_upload/notes.txt -text svneol=unset#text/plain
 import/product-phpkd_vbaqr.xml -text svneol=unset#text/plain
 readme/contribution.txt -text svneol=unset#text/plain
 readme/info.txt -text svneol=unset#text/plain
