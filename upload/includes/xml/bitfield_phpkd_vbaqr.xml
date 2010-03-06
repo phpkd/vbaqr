@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bitfields product="phpkd_vbaqr">
+	<bitfielddefs>
+		<group name="nocache">
+			<group name="phpkd_vbaqr_bbcode">
+				<bitfield name="allow_bbcode_basic"       >1</bitfield>
+				<bitfield name="allow_bbcode_color"       >2</bitfield>
+				<bitfield name="allow_bbcode_size"        >4</bitfield>
+				<bitfield name="allow_bbcode_font"        >8</bitfield>
+				<bitfield name="allow_bbcode_align"       >16</bitfield>
+				<bitfield name="allow_bbcode_list"        >32</bitfield>
+				<bitfield name="allow_bbcode_link"        >64</bitfield>
+				<bitfield name="allow_bbcode_code"        >128</bitfield>
+				<bitfield name="allow_bbcode_php"         >256</bitfield>
+				<bitfield name="allow_bbcode_html"        >512</bitfield>
+				<bitfield name="allow_bbcode_img"         >1024</bitfield>
+				<bitfield name="allow_bbcode_quote"       >2048</bitfield>
+				<bitfield name="phpkd_vbaqr_bbcode_unredo">4096</bitfield>
+				<bitfield name="phpkd_vbaqr_bbcode_ccp"   >8192</bitfield>
+				<bitfield name="allow_bbcode_custom"      >16384</bitfield>
+			</group>
+			<group name="phpkd_vbaqr_location">
+				<bitfield name="qr">1</bitfield>
+				<bitfield name="pm">2</bitfield>
+				<bitfield name="vm">4</bitfield>
+				<bitfield name="pc">8</bitfield>
+				<bitfield name="sg">16</bitfield>
+				<bitfield name="gp">32</bitfield>
+			</group>
+			<group name="phpkd_vbaqr_option">
+				<bitfield name="attach"    >1</bitfield>
+				<!-- <bitfield name="title"     >2</bitfield> -->
+				<bitfield name="manage"    >4</bitfield>
+				<bitfield name="quote"     >8</bitfield>
+				<bitfield name="signature" >16</bitfield>
+				<!-- <bitfield name="parseurl"  >32</bitfield> -->
+				<bitfield name="dissmilies">64</bitfield>
+				<bitfield name="smbdown"   >128</bitfield>
+				<bitfield name="hideexts"  >256</bitfield>
+				<bitfield name="collapsed" >512</bitfield>
+			</group>
+			<group name="phpkd_vbaqr_checked">
+				<bitfield name="phpkd_vbaqr_checked_close"     >1</bitfield>
+				<bitfield name="phpkd_vbaqr_checked_stick"     >2</bitfield>
+				<bitfield name="phpkd_vbaqr_checked_dissm"     >4</bitfield>
+				<bitfield name="phpkd_vbaqr_checked_quote"     >8</bitfield>
+				<bitfield name="phpkd_vbaqr_checked_showsig"   >16</bitfield>
+				<!-- <bitfield name="phpkd_vbaqr_checked_parselinks">32</bitfield> -->
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>
+
+<!-- SVN: $Version: 4.0.100 $ - $Id: bitfield_phpkd_vblvb.xml 130 2010-02-16 19:56:36Z PHPKD $ -->

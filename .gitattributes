@@ -1,1 +1,14 @@
 * text=auto !eol
+import/product-phpkd_vbaqr.xml -text svneol=unset#text/plain
+readme/contribution.txt -text svneol=unset#text/plain
+readme/info.txt -text svneol=unset#text/plain
+readme/install.txt -text svneol=unset#text/plain
+readme/license-legalcode.txt -text svneol=unset#text/plain
+readme/license.txt -text svneol=unset#text/plain
+readme/upgrade.txt -text svneol=unset#text/plain
+screenshots/phpkd_vbaqr_admincp_settings.png -text
+screenshots/phpkd_vbaqr_quickreply_3.8.x.png -text
+screenshots/phpkd_vbaqr_quickreply_4.0.x.png -text
+upload/clientscript/phpkd_vbaqr.js -text svneol=unset#text/plain
+upload/includes/md5_sums_phpkd_vbaqr.php -text
+upload/includes/xml/bitfield_phpkd_vbaqr.xml -text svneol=unset#text/plain

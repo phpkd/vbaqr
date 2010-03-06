@@ -1,0 +1,37 @@
+﻿Installation Procedure:
+~~~~~~~~~~~~~~~~~~~~~~~~
+     1. Upload required files to their appropriate places:
+	clientscript
+	     phpkd_vbaqr.js
+	includes
+	     xml
+	          bitfield_phpkd_vbaqr.xml
+	     md5_sums_phpkd_vbaqr.php
+
+     2. Do the following small manual edit, open the file "clientscript/vbulletin_quick_reply.js" (follow instructions relative to your vB version):
+	Both 3.8.x & 4.0.x:
+	     Search for:
+-------------------------------------------------
+=================================================
+firstChild.nodeValue;qr_disable_controls();qr_hide_errors();
+=================================================
+-------------------------------------------------
+
+	     Replace with:
+-------------------------------------------------
+=================================================
+firstChild.nodeValue;qr_disable_controls();qr_hide_errors();phpkd_vbaqr();
+=================================================
+-------------------------------------------------
+
+	     Save the modified file "clientscript/vbulletin_quick_reply.js" and upload it to it's place again (ALLOW OVERWRITE).
+
+
+     3. Import the product's XML file "product-phpkd_vbaqr.xml" from AdminCP.
+
+     4. Configure product's settings -if required-.
+
+     5. You're Done :).
+
+
+$Version: 4.0.100 $ - $Id: install.txt 8 2010-02-27 14:06:05Z PHPKD $

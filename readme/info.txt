@@ -1,0 +1,346 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|              Brought to you by PHP KingDom (www.phpkd.net)              |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Name:
+~~~~~~
+     * PHPKD - Advanced Quick Reply 'Ultimate'
+
+
+Version:
+~~~~~~~~~
+     * 4.0.100
+
+
+Description:
+~~~~~~~~~~~~~
+     * This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (customizable), that's for (threads, social groups, albums, visitor messages, private messages).
+
+
+Compatible with:
+~~~~~~~~~~~~~~~~~~~~~~~~~
+     * All 3.8.x/4.0.x vBulletin versions.
+
+
+Requirements:
+~~~~~~~~~~~~~~
+     * vBulletin version 3.8.x/4.0.x
+
+
+Helpful links:
+~~~~~~~~~~~~~~
+     * Bug Reports: http://forum.phpkd.net/project.php?do=issuelist&projectid=2&issuetypeid=bug
+     * Feature Requests: http://forum.phpkd.net/project.php?do=issuelist&projectid=2&issuetypeid=feature
+
+
+Features:
+~~~~~~~~~~
+     |- General Features:-
+	* MD5 checked.
+	* Fully Phrased.
+	* Fully Supported.
+	* Fully Automated.
+	* Accurate Processing.
+	* Professionally Coded.
+	* Detailed Documentation.
+	* Zero Additional Queries.
+	* Unique unmatchable product!!
+	* Maximum flexibility & usability.
+	* Require only one small manual JS edit.
+	* Doing all default vBulletin checks & vBulletin Fully Compatible.
+	* Available not only for threads, but also for albums & pciture comments, social group discussions, social groups picture comments, visitor message comments and private messages replies. It's just a complete ultimate product. All in one!!
+
+     |- Specific Features:-
+	* AdminCP Options:
+	     o ON/OFF
+	          - Choose whether the product "PHPKD - Advanced Quick Reply 'Ultimate'" is active or not (Global On/Off Switch).
+
+	     o Applied locations
+	          - Where do you wish to activate this product? You've four valid locations this product can be applied on & take affect:
+		1. Thread Quick Reply
+		2. Private Message Quick Reply
+		3. Profile Visitor Message
+		4. Album Picture Comment
+		5. Social Group Comment
+		6. Social Group Picture Comment
+
+	     o Thread Options: Enable/Disable Options
+	          - You can control all "Advanced Quick Reply 'Ultimate'" options through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.
+		+ Allow attachments
+		+ Thread Management Tools
+		+ Quote message in reply
+		+ Show Signature
+		+ Display "Disable Smilies" option
+		+ Smiliebox Below Editor
+		+ Hide Attachments' Extensions
+		+ Collapse Quick Reply
+
+	     o Thread Options: Checked by default
+	          - You can set the default check status for each option of the "Advanced Quick Reply 'Ultimate'", any checked option here will be checked by default within forums.
+		+ Thread Manage: Close
+		+ Thread Manage: Stick
+		+ Disable Smilies
+		+ Quote message in reply
+		+ Show Signature
+
+	     o Enabled Built-in BB Code Tags
+	          - This setting allows you to enable and disable various built-in BBCode Tags in the "Advanced Quick Reply 'Ultimate'".
+	          - Disabling a BBCode will NOT prevent it from working in the "Advanced Quick Reply 'Ultimate'", but only hide it's relevant button from the editor.
+
+	     o Include/Exclude Users
+	          - You can specify certain users to have this product's effect, or to exclude others from being participated at all.
+	          - You've three options to choose from:
+		+ Include All Users
+		+ Include Specific Users
+		+ Exclude Specific Users
+	          - Select "Include All Users" for the product to take effect on all users (DEFAULT), or select "Include Specific Users" for the product to take effect on certain users only -defined in the following setting-, or select "Exclude Specific Users" for the product NOT to take effect on certain users -defined in the following setting-.
+
+	     o Included/Excluded Users
+	          - If you've chosen "Include Specific Users" OR "Exclude Specific Users" from the above setting, then you've to enter those specified user IDs here in this setting's field. Please enter user IDs separated with commas.
+
+	     o Include/Exclude Usergroups
+	          - You can specify certain usergroups to have this product's effect, or to exclude others from being participated at all.
+	          - You've three options to choose from:
+		+ Include All Usergroups
+		+ Include Specific Usergroups
+		+ Exclude Specific Usergroups
+	          - Select "Include All Usergroups" for the product to take effect on all usergroups (DEFAULT), or select "Include Specific Usergroups" for the product to take effect on certain usergroups only -defined in the following setting-, or select "Exclude Specific Usergroups" for the product NOT to take effect on certain usergroups -defined in the following setting-.
+
+	     o Included/Excluded Usergroups
+	          - If you've chosen "Include Specific Usergroups" OR "Exclude Specific Usergroups" from the above setting, then you've to enter those specified user group IDs here in this setting's field. Please enter user group IDs separated with commas.
+
+	     o Include/Exclude Forums
+	          - You can specify certain forums to have this product's effect, or to exclude others from being participated at all.
+	          - You've three options to choose from:
+		+ Include All Forums
+		+ Include Specific Forums
+		+ Exclude Specific Forums
+	          - Select "Include All Forums" for the product to take effect on all forums (DEFAULT), or select "Include Specific Forums" for the product to take effect on certain forums only -defined in the following setting-, or select "Exclude Specific Forums" for the product NOT to take effect on certain forums -defined in the following setting-.
+
+	     o Included/Excluded Forums
+	          - If you've chosen "Include Specific Forums" OR "Exclude Specific Forums" from the above setting, then you've to enter those specified forum IDs here in this setting's field. Please enter forum IDs separated with commas.
+
+	     o Affected Styles
+	          - You can enable this product on certain styles only & keep it disabled for others, just select the styles you wish this product to take affect on. For multiple selecting press 'CTRL' & keep holding it while selecting.
+
+	     o Smilie Menu Total Smilies
+	          - How many smilies would you like to display in the WYSIWYG popup smilie menu before the 'show all smilies' link is displayed.
+	          - Set this value to 0 if you would like to hide the popup smilie menu completely.
+
+	     o Smiliebox Total Smilies
+	          - How many smilies would you like to be displayed in the smiliebox before the user is prompted to click for the more smilies popup window?
+	          - Set this value to 0 if you would like to hide the clickable smiliebox completely.
+
+	     o Smiliebox Smilies Per Row
+	          - If the smiliebox is enabled, how many smilies would you like to be displayed per row of the box?
+	          - Note: positive integer values allowed. Minimum value is one "1".
+
+
+Installation Procedure:
+~~~~~~~~~~~~~~~~~~~~~~~~
+     1. Upload required files to their appropriate places:
+	clientscript
+	     phpkd_vbaqr.js
+	includes
+	     xml
+	          bitfield_phpkd_vbaqr.xml
+	     md5_sums_phpkd_vbaqr.php
+
+     2. Do the following small manual edit, open the file "clientscript/vbulletin_quick_reply.js" (follow instructions relative to your vB version):
+	Both 3.8.x & 4.0.x:
+	     Search for:
+-------------------------------------------------
+=================================================
+firstChild.nodeValue;qr_disable_controls();qr_hide_errors();
+=================================================
+-------------------------------------------------
+
+	     Replace with:
+-------------------------------------------------
+=================================================
+firstChild.nodeValue;qr_disable_controls();qr_hide_errors();phpkd_vbaqr();
+=================================================
+-------------------------------------------------
+
+	     Save the modified file "clientscript/vbulletin_quick_reply.js" and upload it to it's place again (ALLOW OVERWRITE).
+
+
+     3. Import the product's XML file "product-phpkd_vbaqr.xml" from AdminCP.
+
+     4. Configure product's settings -if required-.
+
+     5. You're Done :).
+
+
+Upgrade Procedure:
+~~~~~~~~~~~~~~~~~~~~~~~~
+     * Same as "Installation Procedure", but "Allow Overwrite" for both file uploads & product import.
+
+
+Controls:
+~~~~~~~~~~
+     * Settings:
+	vBulletin AdminCP » Settings » Options » PHPKD - Advanced Quick Reply 'Ultimate'
+
+
+License:
+~~~~~~~~~
+     Read Here: http://info.phpkd.net/en/license/free/
+     _____________________________________________________________
+
+     Creative Commons - Attribution-Noncommercial-Share Alike 3.0
+     http://creativecommons.org/licenses/by-nc-sa/3.0/
+     _____________________________________________________________
+
+     * You are free:
+     ~~~~~~~~~~~~~~~~
+	+ To Share — to copy, distribute and transmit the work
+	+ To Remix — to adapt the work
+
+     * Under the following conditions:
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	+ [Attribution]: You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
+	+ [Noncommercial]: You may not use this work for commercial purposes.
+	+ [Share Alike]: If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+
+     * For any reuse or distribution, you must make clear to others the license terms of this work. The best way to do this is with a link to this web page (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+     * Any of the above conditions can be waived if you get explicit permission from the copyright holder.
+     * Nothing in this license impairs or restricts the author's moral rights.
+
+     _____________________________________________________________
+
+     Your fair dealing and other rights are in no way affected by the above.
+     This is a human-readable summary of the Legal Code (the full license).
+     http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+     _____________________________________________________________
+
+
+
+Help with:
+~~~~~~~~~~~
+     * Translations to benefit more users.
+     * Suggestions & feature requests to develop this product.
+     * Contributing any updates, upgrades and/or any new features.
+     * Spreading this product. Yes, you're free to re-distribute this product as it is (See 'Free License' details).
+
+
+Known Issues:
+~~~~~~~~~~~~~
+     * Nothing till now!
+
+
+Future TO-DO-LIST:
+~~~~~~~~~~~~~~~~~~~
+     * Post your suggestions!
+
+
+History:
+~~~~~~~~~
+     * v1.0.0 24/05/2008 04:07 AM UTC: First initial release (public)
+     * v1.1.0 15/06/2008 04:07 AM UTC: First updated release (private)
+     * v1.5.0 21/06/2008 03:00 AM UTC: Too many updates (public)
+	+ Core Changes: Changing product id from "phpkd_full_quickreply" to "phpkd_aqr".
+	+ Core Changes: Changing product name from "Full Quick Reply" to "Advanced Quick Reply".
+	+ Preferences: Changing setting group location from 'under BBCode settings' to order '1005'.
+	+ Settings: "Smiliebox Smilies Per Row" default value (3 -> 15).
+	+ Settings: "Smiliebox Below Editor" default value (No -> Yes).
+	+ Settings: "Message box width" default value (Default -> 100%).
+	+ Phrases: "Advanced Quick Reply BB Code Settings" -> "Advanced Quick Reply Settings".
+	+ Optimizations: Optimizing smilies query (encapsulating inside if statment, if smilies are disabled then it won't be excuted).
+	+ Optimizations: Beautifying product's code & auto generate helpful debuging info.
+	+ Optimizations: Optimizing product's code as a whole.
+	+ New Features: Adding "Attachments in Quick Reply" with full support for all attachment's features in the full editor.
+	+ New Features: Ajaxifying all management actions & doing all stuff on the fly without reloading (changing phrases/images/options on fly).
+	+ New Features: Adding Ajaxified "disable smilies in text" options.
+	+ New Features: Adding Ajaxified "Thread Management" options (open/close | stick/unstick).
+	+ New Features: On/Off "Display Cut/Copy/Paste Buttons" option.
+	+ New Features: On/Off "Display Undo/Redo Buttons" option.
+	+ New Features: On/Off "Display Extra Buttons" option.
+	+ New Features: Default "Message box Height" option.
+     * v1.5.1 01/07/2008 06:00 PM UTC: Maintenance release (public)
+	+ Optimizations: Optimizing AJAX Code (And Fixing some bugs with disabled features).
+	+ Optimizations: Disabling some features by default (manual activation required from AdminCP settings whenever it's needed) [ Allow attachments / Display Thread Management Options / Display "Disable Smilies" option ].
+	+ New Features: Two new options [ Hide Attachments' Extensions (On/Off) / Hide Default Quick Reply Options (On/Off) ].
+     * v2.0.0 26/07/2008 12:03 PM UTC: Next Generation -Too many updates- (public)
+	+ Core Changes: Re-writing ~ the whole product's code.
+	+ Core Changes: Optimizing/Fixing minnor bugs in the product's code.
+	+ Core Changes: Minimizing JavaScript file edits to just one tiny edit & separating all required JavaScript Code in a new compressed file.
+	+ Preferences: Changing setting group varname from 'phpkd_aqr_bbcode' to 'phpkd_aqr'.
+	+ Settings: Re-writing all boolean settings with a new technique depending on bitfields.
+	+ New Features: Adding md5 sum check.
+	+ New Features: Optimizing & Beautifying product's code.
+	+ New Features: Developing the helpfull debugging info.
+	+ New Features: Adding usergroup permissions (per usergroup on/off permission).
+	+ New Features: Adding forums permissions (per forum on/off switch).
+	+ New Features: Adding "Exclude Users" permissions (can exclude users from using product).
+	+ New Features: Adding "Collapse Advanced Quick Reply by default" feature.
+     * v4.0.100 03/03/2010 03:03 AM UTC: First 3.8.x/4.0.x release .. Third Generation -Too many updates- (public)
+	+ Core Changes: Shifting up the product to a completely new level.
+	+ Core Changes: Re-writting product's code from scratch to be highly customizable/flexible/reusable and fully compatible with both 3.8.x & 4.0.x vB series.
+	+ Core Changes: Product's ID has been changed to "phpkd_vbaqr" & name to "PHPKD - Advanced Quick Reply 'Ultimate'".
+	+ Core Changes: Redesigning & standardizing all settings for better using experience.
+	+ New Features: Added support for albums & picture comments.
+	+ New Features: Added support for social group discussions.
+	+ New Features: Added support for social groups picture comments.
+	+ New Features: Added support for visitor message comments.
+	+ New Features: Added support for private messages replies.
+	+ New Features: Ability to include/exclude users from using this product.
+	+ New Features: Ability to include/exclude usergroups from using this product.
+	+ New Features: Ability to include/exclude forums from using this product.
+	+ New Features: Ability to include/exclude styles from using this product.
+
+
+Screen Shots:
+~~~~~~~~~~~~~~
+     * Available in the screenshots folder.
+
+
+Technical Notes:
+~~~~~~~~~~~~~~~~~
+     * New Plugins: 13
+     * New Phrases: 70
+     * New Templates: 8
+     * Manual Template changes: 0
+     * Auto Template changes: *
+     * New Files: 3
+     * Manual File Changes: 1
+     * New vBulletin Settings: 15
+     * New Usergroup Permissions: 0
+     * New Moderator Permissions: 0
+     * New Administrator Permissions: 0
+     * New Forum Options: 0
+     * New DB Tables: 0
+     * DB Alterations: 0
+     * New Cronjobs: 0
+        --------------------------
+     * Installation Level: V.Easy
+     * Installation Time: ~10 seconds
+
+
+Reference Links:
+~~~~~~~~~~~~~~~~~
+     * PHPKD.NET: http://go.phpkd.net/en/product/vbaqr/
+     * vBulletin.org: http://www.vbulletin.org/forum/misc.php?do=producthelp&pid=phpkd_vbaqr
+
+
+Recent Products:
+~~~~~~~~~~~~~~~~~
+
+     * PHPKD - vB Link Verifier Bot * New *
+	http://tools.phpkd.net/en/producthelp/url/vblvb/
+
+     * PHPKD - Advanced Quick Edit [ All Built-In BBCodes ]
+	http://tools.phpkd.net/en/producthelp/url/vbaqe/
+
+     * Periodic Prune Pms [ Cronjob - Fully Controlable ]
+	http://tools.phpkd.net/en/producthelp/url/vbppp/
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|              Brought to you by PHP KingDom (www.phpkd.net)              |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+$Version: 4.0.100 $ - $Id: info.txt 9 2010-02-27 14:20:59Z PHPKD $
