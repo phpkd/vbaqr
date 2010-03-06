@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <product productid="phpkd_vbaqr" active="1">
-	<title>PHPKD - Advanced Quick Reply 'Ultimate'</title>
+	<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></title>
 	<description><![CDATA[This product extends 'Quick Reply' functionality to allow all "Advanced Editor mode" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (with full control from AdminCP).]]></description>
-	<version>4.0.100</version>
-	<url>http://tools.phpkd.net/en/producthelp/url/vbaqr/</url>
-	<versioncheckurl>http://tools.phpkd.net/en/producthelp/version/vbaqr/</versioncheckurl>
+	<version><![CDATA[4.0.100]]></version>
+	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
+	<author><![CDATA[$Author$]]></author>
+	<revision><![CDATA[$Revision$]]></revision>
+	<released><![CDATA[$Date$]]></released>
+	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbaqr/]]></url>
+	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbaqr/]]></versioncheckurl>
+	<extradetails><![CDATA[http://tools.phpkd.net/en/producthelp/info/vbaqr/]]></extradetails>
 	<dependencies>
 		<dependency dependencytype="vbulletin" minversion="3.8.0" maxversion="4.0.99" />
 	</dependencies>

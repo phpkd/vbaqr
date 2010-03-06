@@ -1,10 +1,13 @@
 [SIZE="2"][B][FONT="Tahoma"][B][CENTER]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !.................. Brought to you by PHP KingDom ([url]www.phpkd.net[/url]) ..................!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[/CENTER][/B][/FONT][/B][/SIZE]
+[/B][/FONT][/B][/SIZE]
+[SIZE="4"][COLOR="Green"][B]PHPKD - Advanced Quick Reply 'Ultimate'
+[ Attachments - Smilies - Thread Management - AJAX ]
+( Threads / Albums / Social Groups / Private Messages )[/B][/COLOR][/SIZE]
 
 
-[CENTER][URL="http://www.vbulletin.org/forum/vborg_miscactions.php?do=nominate&threadid=180330&type=1"][FONT="Arial Black"][SIZE="4"][COLOR="Red"]»»[/COLOR] If you like it, Nominate it! [COLOR="Red"]««[/COLOR][/SIZE][/FONT][/URL][/CENTER]
+[URL="http://www.vbulletin.org/forum/vborg_miscactions.php?do=nominate&threadid=180330&type=1"][FONT="Arial Black"][SIZE="4"][COLOR="Red"]»»[/COLOR] If you like it, Nominate it! [COLOR="Red"]««[/COLOR][/SIZE][/FONT][/URL][/CENTER]
 
 
 
@@ -351,7 +354,7 @@ This is a human-readable summary of the Legal Code (the full license).
 
 [B][U]Recent Products:[/U][/B]
 [LIST]
-     [*][URL="http://tools.phpkd.net/en/producthelp/url/vblvb/"]PHPKD - vB Link Verifier Bot[/URL] [COLOR="Red"]* New *[/COLOR]
+     [*][URL="http://tools.phpkd.net/en/producthelp/url/vblvb/"]PHPKD - vB Link Verifier Bot[/URL] [COLOR="Red"][B][FONT="Arial Black"][I]! New ![/I][/FONT][/B][/COLOR]
      [*][URL="http://tools.phpkd.net/en/producthelp/url/vbaqe/"]Advanced Quick Edit [ All Built-In BBCodes ][/URL]
      [*][URL="http://tools.phpkd.net/en/producthelp/url/vbppp/"]Periodic Prune Pms [ Cronjob - Fully Controlable ][/URL]
 [/LIST]
