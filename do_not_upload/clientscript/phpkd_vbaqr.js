@@ -1,6 +1,6 @@
 /*==================================================================================*\
 || ################################################################################ ||
-|| # Product Name: PHPKD - Advanced Quick Reply                  Version: 4.0.100 # ||
+|| # Product Name: PHPKD - Advanced Quick Reply                  Version: 4.0.110 # ||
 || # License Type: Free License                                    $Revision: 5 $ # ||
 || # ---------------------------------------------------------------------------- # ||
 || # 																			  # ||
@@ -41,7 +41,7 @@ function phpkd_vbaqr()
 					phpkd_vbaqr_thead_buttons[i].innerHTML = ((phpkd_vbaqr_thread_open == true) ? vbphrase['close_thread'] : vbphrase['open_thread']);
 				}
 			}
-			else
+			else if (phpkd_vbaqr_vbversion == '38x')
 			{
 				// Change images on the fly with Open/Close actions
 				var phpkd_vbaqr_thead_buttons = YAHOO.util.Dom.getElementsByClassName("thread_button", "img");
@@ -111,7 +111,7 @@ function phpkd_vbaqr()
 
 /*============================================================================*\
 || ########################################################################### ||
-|| # Version: 4.0.100
+|| # Version: 4.0.110
 || # $Revision: 5 $
 || # Released: $Date: 2010-03-06 13:29:54 +0200 (Sat, 06 Mar 2010) $
 || ########################################################################### ||

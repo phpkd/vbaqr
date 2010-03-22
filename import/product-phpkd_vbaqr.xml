@@ -3,7 +3,7 @@
 <product productid="phpkd_vbaqr" active="1">
 	<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></title>
 	<description><![CDATA[This product extends 'Quick Reply' functionality to allow all "Advanced Editor mode" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (with full control from AdminCP).]]></description>
-	<version><![CDATA[4.0.100]]></version>
+	<version><![CDATA[4.0.110]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
 	<author><![CDATA[$Author$]]></author>
 	<revision><![CDATA[$Revision$]]></revision>
@@ -718,7 +718,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Album Picture Stuff ]]]></title>
 			<hookname>album_picture</hookname>
-			<phpcode><![CDATA[if ($phpkd_vbaqr[vbversion] == '38x' AND $vbulletin->options['pc_enabled'] AND $show['phpkd_vbaqr_active'])
+			<phpcode><![CDATA[if ($phpkd_vbaqr[vbversion] == '38x' AND $vbulletin->options['pc_enabled'])
 {
 	$phpkd_vbaqr_search = array(
 		'<div id=\"$editorid\" class=\"vBulletin_editor\">$messagearea</div>'
@@ -841,6 +841,13 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 						$show['phpkd_vbaqr_active']  = FALSE;
 					}
 					break;
+			}
+			break;
+		case 'entry':
+		case 'blog':
+			if (!($vbulletin->options['phpkd_vbaqr_location'] & 64))
+			{
+				$show['phpkd_vbaqr_active']  = FALSE;
 			}
 			break;
 		default:
@@ -979,6 +986,37 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 }]]></phpcode>
 		</plugin>
 		<plugin active="1" executionorder="5">
+			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Blog Entry Stuff ]]]></title>
+			<hookname>blog_entry_complete</hookname>
+			<phpcode><![CDATA[if ($show['postcomment'] AND $show['quickcomment'])
+{
+	if ($phpkd_vbaqr[vbversion] == '40x')
+	{
+		$phpkd_vbaqr_search = array(
+			'<div class="wysiwyg_block">'
+		);
+
+		$phpkd_vbaqr_replace = array(
+			'<div>'
+		);
+	}
+	else if ($phpkd_vbaqr[vbversion] == '38x')
+	{
+		$phpkd_vbaqr_search = array(
+			'<div id=\"$editorid\" class=\"vBulletin_editor\">$messagearea</div>',
+			'$stylevar[formwidth_blog]'
+		);
+
+		$phpkd_vbaqr_replace = array(
+			'$messagearea',
+			'$stylevar[formwidth]'
+		);
+	}
+
+	$vbulletin->templatecache['blog_show_entry'] = str_replace($phpkd_vbaqr_search, $phpkd_vbaqr_replace, $vbulletin->templatecache['blog_show_entry']);
+}]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Main process ]]]></title>
 			<hookname>editor_toolbar_end</hookname>
 			<phpcode><![CDATA[if ($show['phpkd_vbaqr_active'] AND in_array($editor_type, array('qr', 'qr_small', 'qr_pm')) AND $toolbartype)
@@ -994,7 +1032,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 	}
 
 	// Customized 'formwidth' for the editor width!!
-	$phpkd_vbaqr_formwidth = ((substr(SIMPLE_VERSION, 0, 1) >= 4) ? vB_Template_Runtime::fetchStyleVar('formwidth') - 25 : $stylevar['formwidth'] - 25);
+	$phpkd_vbaqr_formwidth = (($phpkd_vbaqr['vbversion'] == '40x') ? vB_Template_Runtime::fetchStyleVar('formwidth') - 25 : $stylevar['formwidth'] - 25);
 
 	// Control Built-In BBCodes!
 	$show['font_bbcode']  = ($show['font_bbcode']  AND $vbulletin->options['phpkd_vbaqr_bbcode'] & 8)    ? true : false;
@@ -1037,7 +1075,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 					$templater->register('checked', $checked);
 				$disablesmiliesoption = $templater->render();
 			}
-			else
+			else if ($phpkd_vbaqr[vbversion] == '38x')
 			{
 				eval('$disablesmiliesoption = "' . fetch_template('newpost_disablesmiliesoption') . '";');
 			}
@@ -1096,7 +1134,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 								break;
 							}
 						}
-						else
+						else if ($phpkd_vbaqr[vbversion] == '38x')
 						{
 							if (empty($prevcategory))
 							{
@@ -1150,7 +1188,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 
 						$show['moresmilieslink'] = ($totalsmilies > $vbulletin->options['smtotal']);
 					}
-					else
+					else if ($phpkd_vbaqr[vbversion] == '38x')
 					{
 						$bits = array();
 						while ($smilie = $vbulletin->db->fetch_array($smilies) AND $i++ < $vbulletin->options['phpkd_vbaqr_smtotal'])
@@ -1185,63 +1223,72 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 			}
 
 
-			// vBulletin 3.8.x/4.0.x Compatibility!
-			if ($phpkd_vbaqr['vbversion'] == '40x')
+			if ($vbulletin->options['phpkd_vbaqr_smtotal'] > 0)
 			{
-				$templater = vB_Template::create('editor_smiliebox');
-					$templater->register('editorid', $editorid);
-					$templater->register('smiliebits', $smiliebits);
-					$templater->register('totalsmilies', $totalsmilies);
-				$smiliebox = $templater->render();
+				// vBulletin 3.8.x/4.0.x Compatibility!
+				if ($phpkd_vbaqr['vbversion'] == '40x')
+				{
+					$templater = vB_Template::create('editor_smiliebox');
+						$templater->register('editorid', $editorid);
+						$templater->register('smiliebits', $smiliebits);
+						$templater->register('totalsmilies', $totalsmilies);
+					$smiliebox = $templater->render();
+				}
+				else if ($phpkd_vbaqr[vbversion] == '38x')
+				{
+					if ($show['phpkd_vbaqr_option_smbdown'])
+					{
+						eval('$smiliebox = "' . fetch_template('phpkd_vbaqr_38x_option_smbdown') . '";');
+					}
+					else
+					{
+						eval('$smiliebox = "' . fetch_template('editor_smiliebox') . '";');
+					}
+				}
 			}
 			else
 			{
-				if ($show['phpkd_vbaqr_option_smbdown'])
-				{
-					eval('$smiliebox = "' . fetch_template('phpkd_vbaqr_38x_option_smbdown') . '";');
-				}
-				else
-				{
-					eval('$smiliebox = "' . fetch_template('editor_smiliebox') . '";');
-				}
+				$smiliebox = '';
 			}
-		}
-		else
-		{
-			$smiliebox = '';
 		}
 	}
 
 	// vBulletin 3.8.x/4.0.x Compatibility!
 	if ($phpkd_vbaqr['vbversion'] == '40x')
 	{
-		// Prepare Debiugging Data! - 3.8.x code already prepared from 'cache_templates' hook!
+		// Prepare Debiugging Data! - No need for 3.8.x preparing since the code already prepared from 'cache_templates' hook!
 		vB_Template::preRegister($editor_template_name, array('phpkd_vbaqr' => $phpkd_vbaqr));
-	}
 
-
-	$phpkd_vbaqr_editor_search = $phpkd_vbaqr_editor_replace = array();
-	switch (THIS_SCRIPT)
-	{
-		case 'showthread':
-			$phpkd_vbaqr_editor_search[] = 'class="blockrow texteditor"';
-			$phpkd_vbaqr_editor_replace[] = 'class="blockrow texteditor" style="padding-left: 0px; padding-right: 0px; padding-top: 0px"';
-			break;
-		case 'private':
-		case 'member':
-		case 'album':
-		case 'group':
-			$phpkd_vbaqr_editor_search[] = '<!-- phpkd_vbaqr_40x_editor_replacement -->';
-			$phpkd_vbaqr_editor_replace[] = '<style type="text/css" id="phpkd_vbaqr">form#message_form textarea {height: 100px;}</style>';
-			break;
+		$phpkd_vbaqr_editor_search = $phpkd_vbaqr_editor_replace = array();
+		switch (THIS_SCRIPT)
+		{
+			case 'showthread':
+				$phpkd_vbaqr_editor_search[] = 'class="blockrow texteditor"';
+				$phpkd_vbaqr_editor_replace[] = 'class="blockrow texteditor" style="padding-left: 0px; padding-right: 0px; padding-top: 0px"';
+				break;
+			case 'private':
+			case 'member':
+			case 'album':
+			case 'group':
+				$phpkd_vbaqr_editor_search[] = '<!-- phpkd_vbaqr_40x_editor_replacement -->';
+				$phpkd_vbaqr_editor_replace[] = '<style type="text/css" id="phpkd_vbaqr">form#message_form textarea {height: 100px;}</style>';
+				break;
+			case 'entry':
+			case 'blog':
+				$phpkd_vbaqr_editor_search[] = 'class="blockrow texteditor"';
+				$phpkd_vbaqr_editor_search[] = '<!-- phpkd_vbaqr_40x_editor_replacement -->';
+				$phpkd_vbaqr_editor_replace[] = 'class="blockrow texteditor" style="padding-left: 0px; padding-right: 0px; padding-top: 0px"';
+				$phpkd_vbaqr_editor_replace[] = '<style type="text/css" id="phpkd_vbaqr">form#qc_form textarea {height: 100px;}</style>';
+				break;
+		}
+		$vbulletin->templatecache[$editor_template_name] = str_replace($phpkd_vbaqr_editor_search, $phpkd_vbaqr_editor_replace, $vbulletin->templatecache[$editor_template_name]);
 	}
-	$vbulletin->templatecache[$editor_template_name] = str_replace($phpkd_vbaqr_editor_search, $phpkd_vbaqr_editor_replace, $vbulletin->templatecache[$editor_template_name]);
 }]]></phpcode>
 		</plugin>
 		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Social Group Discussion Stuff ]]]></title>
 			<hookname>group_discuss_end</hookname>
-			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $show['phpkd_vbaqr_active'])
+			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'])
 {
 	$phpkd_vbaqr_search = array(
 		'<div id=\"$editorid\" class=\"vBulletin_editor\">$messagearea</div>'
@@ -1257,7 +1304,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Social Group Picture Comment Stuff ]]]></title>
 			<hookname>group_picture</hookname>
-			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $vbulletin->options['pc_enabled'] AND $show['phpkd_vbaqr_active'])
+			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $vbulletin->options['pc_enabled'])
 {
 	$phpkd_vbaqr_search = array(
 		'<div id=\"$editorid\" class=\"vBulletin_editor\">$messagearea</div>'
@@ -1274,7 +1321,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Member Profile Stuff ]]]></title>
 			<hookname>member_profileblock_fetch_unwrapped</hookname>
 			<phpcode><![CDATA[global $phpkd_vbaqr;
-if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $show['phpkd_vbaqr_active'] AND $this->template_name == 'memberinfo_block_visitormessaging')
+if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $this->template_name == 'memberinfo_block_visitormessaging')
 {
 	$phpkd_vbaqr_search = array(
 		'<div id=\"$block_data[editorid]\" class=\"vBulletin_editor\">$block_data[messagearea]</div>'
@@ -1298,7 +1345,7 @@ if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $show['phpk
 		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Private Message Stuff ]]]></title>
 			<hookname>private_complete</hookname>
-			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickreply'] AND $show['phpkd_vbaqr_active'])
+			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickreply'])
 {
 	$phpkd_vbaqr_search = array(
 		'<div id=\"$editorid\" class=\"vBulletin_editor\">$messagearea</div>'
@@ -1590,6 +1637,11 @@ if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $show['phpk
 				$phpkd_vbaqr_replace[] = '$vbphrase[quote_message_in_reply]</label>$disablesmiliesoption';
 			}
 		}
+		else
+		{
+			$phpkd_vbaqr_search[]  = '<fieldset class=\"fieldset\" style=\"margin:$stylevar[formspacer]px 0px 0px 0px\">';
+			$phpkd_vbaqr_replace[] = '<fieldset class=\"fieldset\" style=\"display: none\">';
+		}
 
 
 		if ($show['quickreply_collapse'] AND $show['phpkd_vbaqr_option_collapsed'])
@@ -1637,6 +1689,7 @@ if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $show['phpk
 			<phrase name="phpkd_vbaqr_inex_users_all" date="1264428993" username="PHPKD" version="4.0.100"><![CDATA[Include All Users]]></phrase>
 			<phrase name="phpkd_vbaqr_inex_users_ex" date="1264429019" username="PHPKD" version="4.0.100"><![CDATA[Exclude Specific Users]]></phrase>
 			<phrase name="phpkd_vbaqr_inex_users_in" date="1264429006" username="PHPKD" version="4.0.100"><![CDATA[Include Specific Users]]></phrase>
+			<phrase name="phpkd_vbaqr_location_bg" date="1269247357" username="PHPKD" version="4.0.110"><![CDATA[Blog Comments]]></phrase>
 			<phrase name="phpkd_vbaqr_location_gp" date="1265046811" username="PHPKD" version="4.0.100"><![CDATA[Social Group Picture Comment]]></phrase>
 			<phrase name="phpkd_vbaqr_location_pc" date="1264509847" username="PHPKD" version="4.0.100"><![CDATA[Album Picture Comment]]></phrase>
 			<phrase name="phpkd_vbaqr_location_pm" date="1264509870" username="PHPKD" version="4.0.100"><![CDATA[Private Message Quick Reply]]></phrase>
@@ -1704,7 +1757,7 @@ Select "Include All Users" for the product to take effect on all users (<strong>
 			<phrase name="setting_phpkd_vbaqr_inex_users_ids_desc" date="1265157799" username="PHPKD" version="4.0.100"><![CDATA[If you've chosen "Include Specific Users" OR "Exclude Specific Users" from the above setting, then you've to enter those specified user IDs here in this setting's field. Please enter user IDs separated with commas.]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_inex_users_ids_title" date="1265157799" username="PHPKD" version="4.0.100"><![CDATA[Included/Excluded Users]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_inex_users_title" date="1265157796" username="PHPKD" version="4.0.100"><![CDATA[Include/Exclude Users]]></phrase>
-			<phrase name="setting_phpkd_vbaqr_location_desc" date="1265157101" username="PHPKD" version="4.0.100"><![CDATA[Where do you wish to activate this product? You've four valid locations this product can be applied on & take affect:
+			<phrase name="setting_phpkd_vbaqr_location_desc" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Where do you wish to activate this product? You've four valid locations this product can be applied on & take affect:
 <ol>
 	<li>Thread Quick Reply</li>
 	<li>Private Message Quick Reply</li>
@@ -1712,8 +1765,9 @@ Select "Include All Users" for the product to take effect on all users (<strong>
 	<li>Album Picture Comment</li>
 	<li>Social Group Comment</li>
 	<li>Social Group Picture Comment</li>
+	<li>Blog Comments</li>
 </ol>]]></phrase>
-			<phrase name="setting_phpkd_vbaqr_location_title" date="1265157101" username="PHPKD" version="4.0.100"><![CDATA[Applied locations]]></phrase>
+			<phrase name="setting_phpkd_vbaqr_location_title" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Applied locations]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_option_desc" date="1265276130" username="PHPKD" version="4.0.100"><![CDATA[You can control all "Advanced Quick Reply 'Ultimate'" options through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_option_title" date="1265276130" username="PHPKD" version="4.0.100"><![CDATA[Thread Options: Enable/Disable Options]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_smcolumns_desc" date="1264517741" username="PHPKD" version="4.0.100"><![CDATA[If the smiliebox is enabled, how many smilies would you like to be displayed per row of the box?<br />
@@ -1740,7 +1794,7 @@ Set this value to 0 if you would like to hide the popup smilie menu completely.]
 			<setting varname="phpkd_vbaqr_location" displayorder="20">
 				<datatype>bitfield</datatype>
 				<optioncode>phpkd_vbaqr_location</optioncode>
-				<defaultvalue>63</defaultvalue>
+				<defaultvalue>127</defaultvalue>
 			</setting>
 			<setting varname="phpkd_vbaqr_option" displayorder="30">
 				<datatype>bitfield</datatype>

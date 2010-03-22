@@ -27,6 +27,7 @@
 				<bitfield name="pc">8</bitfield>
 				<bitfield name="sg">16</bitfield>
 				<bitfield name="gp">32</bitfield>
+				<bitfield name="bg">64</bitfield>
 			</group>
 			<group name="phpkd_vbaqr_option">
 				<bitfield name="attach"    >1</bitfield>
@@ -52,4 +53,4 @@
 	</bitfielddefs>
 </bitfields>
 
-<!-- SVN: $Version: 4.0.100 $ - $Id$ -->
+<!-- SVN: $Version: 4.0.110 $ - $Id$ -->

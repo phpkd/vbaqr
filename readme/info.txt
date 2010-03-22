@@ -11,7 +11,7 @@ Name:
 
 Version:
 ~~~~~~~~~
-     * 4.0.100
+     * 4.0.110
 
 
 Description:
@@ -290,6 +290,12 @@ History:
 	+ New Features: Ability to include/exclude usergroups from using this product.
 	+ New Features: Ability to include/exclude forums from using this product.
 	+ New Features: Ability to include/exclude styles from using this product.
+     * v4.0.110 23/03/2010 03:03 AM UTC: Featured & Maintenance Release (public)
+	+ New Feature: Added support for vBulletin Blogs (http://forum.phpkd.net/project.php?issueid=59).
+	+ Bug Fix: Empty 'options' fieldset after disabling all thread options 3.8.x (http://forum.phpkd.net/project.php?issueid=61).
+	+ Bug Fix: Uncached templates when disabling smilie box (http://forum.phpkd.net/project.php?issueid=60).
+	+ Bug Fix: Private message quick reply doesn't quote original PM (http://forum.phpkd.net/project.php?issueid=70).
+	+ Miscellaneous optimizations & improvements.
 
 
 Screen Shots:
@@ -343,4 +349,4 @@ Recent Products:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-$Version: 4.0.100 $ - $Id$
+$Version: 4.0.110 $ - $Id$
