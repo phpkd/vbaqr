@@ -29,7 +29,7 @@
 				<bitfield name="gp">32</bitfield>
 				<bitfield name="bg">64</bitfield>
 			</group>
-			<group name="phpkd_vbaqr_option">
+			<group name="phpkd_vbaqr_thoption">
 				<bitfield name="attach"    >1</bitfield>
 				<!-- <bitfield name="title"     >2</bitfield> -->
 				<bitfield name="manage"    >4</bitfield>
@@ -40,6 +40,9 @@
 				<bitfield name="smbdown"   >128</bitfield>
 				<bitfield name="hideexts"  >256</bitfield>
 				<bitfield name="collapsed" >512</bitfield>
+			</group>
+			<group name="phpkd_vbaqr_gnoption">
+				<bitfield name="aqpm">1</bitfield>
 			</group>
 			<group name="phpkd_vbaqr_checked">
 				<bitfield name="phpkd_vbaqr_checked_close"     >1</bitfield>
