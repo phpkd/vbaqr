@@ -16,7 +16,7 @@ Version:
 
 Description:
 ~~~~~~~~~~~~~
-     * This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (customizable), that's for (threads, social groups, albums, visitor messages, private messages).
+     * This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Attachments / Smilies / Management ], (threads, blogs, social groups, albums, visitor messages, private messages) [customizable].
 
 
 Compatible with:
@@ -50,6 +50,7 @@ Features:
 	* Maximum flexibility & usability.
 	* Require only one small manual JS edit.
 	* Doing all default vBulletin checks & vBulletin Fully Compatible.
+	* Built using native vBulletin code, it works smoothly as default part of vBulletin.
 	* Available not only for threads, but also for albums & pciture comments, social group discussions, social groups picture comments, visitor message comments and private messages replies. It's just a complete ultimate product. All in one!!
 
      |- Specific Features:-
@@ -65,6 +66,7 @@ Features:
 		4. Album Picture Comment
 		5. Social Group Comment
 		6. Social Group Picture Comment
+		7. Blog Comments
 
 	     o Thread Options: Enable/Disable Options
 	          - You can control all "Advanced Quick Reply 'Ultimate'" options through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.
@@ -76,6 +78,10 @@ Features:
 		+ Smiliebox Below Editor
 		+ Hide Attachments' Extensions
 		+ Collapse Quick Reply
+
+	     o General Options: Enable/Disable Options
+	          - You can control general options of "Advanced Quick Reply 'Ultimate'" through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.
+		+ Auto Quote PM in QR
 
 	     o Thread Options: Checked by default
 	          - You can set the default check status for each option of the "Advanced Quick Reply 'Ultimate'", any checked option here will be checked by default within forums.
@@ -292,6 +298,7 @@ History:
 	+ New Features: Ability to include/exclude styles from using this product.
      * v4.0.110 23/03/2010 03:03 AM UTC: Featured & Maintenance Release (public)
 	+ New Feature: Added support for vBulletin Blogs (http://forum.phpkd.net/project.php?issueid=59).
+	+ New Feature: Auto quote PM message with ability to enable/disable it (http://forum.phpkd.net/project.php?issueid=70).
 	+ Bug Fix: Empty 'options' fieldset after disabling all thread options 3.8.x (http://forum.phpkd.net/project.php?issueid=61).
 	+ Bug Fix: Uncached templates when disabling smilie box (http://forum.phpkd.net/project.php?issueid=60).
 	+ Bug Fix: Private message quick reply doesn't quote original PM (http://forum.phpkd.net/project.php?issueid=70).

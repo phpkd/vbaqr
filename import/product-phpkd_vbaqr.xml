@@ -2,7 +2,7 @@
 
 <product productid="phpkd_vbaqr" active="1">
 	<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></title>
-	<description><![CDATA[This product extends 'Quick Reply' functionality to allow all "Advanced Editor mode" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (with full control from AdminCP).]]></description>
+	<description><![CDATA[This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Attachments / Smilies / Management ], (threads, blogs, social groups, albums, visitor messages, private messages) [customizable].]]></description>
 	<version><![CDATA[4.0.110]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
 	<author><![CDATA[$Author$]]></author>
@@ -1772,6 +1772,8 @@ Select "Include All Users" for the product to take effect on all users (<strong>
 	<li>Blog Comments</li>
 </ol>]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_location_title" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Applied locations]]></phrase>
+			<phrase name="setting_phpkd_vbaqr_gnoption_desc" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[You can control general options of "Advanced Quick Reply 'Ultimate'" through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.]]></phrase>
+			<phrase name="setting_phpkd_vbaqr_gnoption_title" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[General Options: Enable/Disable Options]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_thoption_desc" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[You can control all "Advanced Quick Reply 'Ultimate'" options through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_thoption_title" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[Thread Options: Enable/Disable Options]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_smcolumns_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If the smiliebox is enabled, how many smilies would you like to be displayed per row of the box?<br />

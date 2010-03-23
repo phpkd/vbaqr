@@ -18,7 +18,7 @@
 [B]Name:[/B] PHPKD - Advanced Quick Reply 'Ultimate'
 [B]Version:[/B] 4.0.110
 
-[B]Description:[/B] This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Smilie Box / Smilie Menu / Attachments ] (customizable), that's for (threads, social groups, albums, visitor messages, private messages).
+[B]Description:[/B] This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Attachments / Smilies / Management ], (threads, blogs, social groups, albums, visitor messages, private messages) [customizable].
 
 
 [B]Compatible with:[/B] All 3.8.x/4.0.x vBulletin versions.
@@ -53,6 +53,7 @@
 	     [*]Maximum flexibility & usability.
 	     [*]Require only one small manual JS edit.
 	     [*]Doing all default vBulletin checks & vBulletin Fully Compatible.
+	     [*]Built using native vBulletin code, it works smoothly as default part of vBulletin.
 	     [*]Available not only for threads, but also for albums & pciture comments, social group discussions, social groups picture comments, visitor message comments and private messages replies. It's just a complete ultimate product. All in one!!
 	[/LIST]
 
@@ -73,6 +74,7 @@
 			[*]Album Picture Comment
 			[*]Social Group Comment
 			[*]Social Group Picture Comment
+			[*]Blog Comments
 		     [/LIST]
 
 		     [*][B]Thread Options: Enable/Disable Options[/B]
@@ -86,6 +88,12 @@
 			[*]Smiliebox Below Editor
 			[*]Hide Attachments' Extensions
 			[*]Collapse Quick Reply
+		     [/LIST]
+
+		     [*][B]General Options: Enable/Disable Options[/B]
+		     You can control general options of "Advanced Quick Reply 'Ultimate'" through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.
+		     [LIST]
+			[*]Auto Quote PM in QR
 		     [/LIST]
 
 		     [*][B]Thread Options: Checked by default[/B]
@@ -322,10 +330,11 @@ This is a human-readable summary of the Legal Code (the full license).
      [/LIST]
      [*][B]v4.0.110[/B] 23/03/2010 03:03 AM UTC: Featured & Maintenance Release (public)
      [LIST=1]
-	[*]New Feature: Added support for vBulletin Blogs (http://forum.phpkd.net/project.php?issueid=59).
-	[*]Bug Fix: Empty 'options' fieldset after disabling all thread options 3.8.x (http://forum.phpkd.net/project.php?issueid=61).
-	[*]Bug Fix: Uncached templates when disabling smilie box (http://forum.phpkd.net/project.php?issueid=60).
-	[*]Bug Fix: Private message quick reply doesn't quote original PM (http://forum.phpkd.net/project.php?issueid=70).
+	[*][URL="http://forum.phpkd.net/project.php?issueid=59"]New Feature: Added support for vBulletin Blogs.[/URL]
+	[*][URL="http://forum.phpkd.net/project.php?issueid=70"]New Feature: Auto quote PM message with ability to enable/disable it.[/URL]
+	[*][URL="http://forum.phpkd.net/project.php?issueid=61"]Bug Fix: Empty 'options' fieldset after disabling all thread options 3.8.x.[/URL]
+	[*][URL="http://forum.phpkd.net/project.php?issueid=60"]Bug Fix: Uncached templates when disabling smilie box.[/URL]
+	[*][URL="http://forum.phpkd.net/project.php?issueid=70"]Bug Fix: Private message quick reply doesn't quote original PM.[/URL]
 	[*]Miscellaneous optimizations & improvements.
      [/LIST]
 [/LIST]
