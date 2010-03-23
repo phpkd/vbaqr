@@ -239,7 +239,8 @@ Known Issues:
 
 Future TO-DO-LIST:
 ~~~~~~~~~~~~~~~~~~~
-     * Post your suggestions!
+     * Parse links check box (http://forum.phpkd.net/project.php?issueid=75).
+     * Reply title in quick reply (http://forum.phpkd.net/project.php?issueid=74).
 
 
 History:
@@ -312,14 +313,14 @@ Screen Shots:
 
 Technical Notes:
 ~~~~~~~~~~~~~~~~~
-     * New Plugins: 13
-     * New Phrases: 70
+     * New Plugins: 14
+     * New Phrases: 74
      * New Templates: 8
      * Manual Template changes: 0
      * Auto Template changes: *
      * New Files: 3
      * Manual File Changes: 1
-     * New vBulletin Settings: 15
+     * New vBulletin Settings: 16
      * New Usergroup Permissions: 0
      * New Moderator Permissions: 0
      * New Administrator Permissions: 0
@@ -329,7 +330,7 @@ Technical Notes:
      * New Cronjobs: 0
         --------------------------
      * Installation Level: V.Easy
-     * Installation Time: ~10 seconds
+     * Installation Time: ~15 seconds
 
 
 Reference Links:

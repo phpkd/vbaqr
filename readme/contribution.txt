@@ -262,7 +262,8 @@ This is a human-readable summary of the Legal Code (the full license).
 
 [U][B]Future TO-DO-LIST:[/B][/U]
 [LIST]
-     [*]Post your suggestions!
+     [*][URL="http://forum.phpkd.net/project.php?issueid=75"]Parse links check box.[/URL]
+     [*][URL="http://forum.phpkd.net/project.php?issueid=74"]Reply title in quick reply.[/URL]
 [/LIST]
 
 
@@ -348,14 +349,14 @@ This is a human-readable summary of the Legal Code (the full license).
 
 [U][B]Technical Notes:[/B][/U]
 [LIST]
-     [*][COLOR="DimGray"]New Plugins:[/COLOR] 13
-     [*][COLOR="DimGray"]New Phrases:[/COLOR] 70
+     [*][COLOR="DimGray"]New Plugins:[/COLOR] 14
+     [*][COLOR="DimGray"]New Phrases:[/COLOR] 74
      [*][COLOR="dimgray"]New Templates:[/COLOR] 8
      [*][COLOR="dimgray"]Manual Template changes:[/COLOR] 0
      [*][COLOR="dimgray"]Auto Template changes:[/COLOR] *
      [*][COLOR="dimgray"]New Files:[/COLOR] 3
      [*][COLOR="dimgray"]Manual File Changes:[/COLOR] 1
-     [*][COLOR="dimgray"]New vBulletin Settings:[/COLOR] 15
+     [*][COLOR="dimgray"]New vBulletin Settings:[/COLOR] 16
      [*][COLOR="dimgray"]New Usergroup Permissions:[/COLOR] 0
      [*][COLOR="dimgray"]New Moderator Permissions:[/COLOR] 0
      [*][COLOR="dimgray"]New Administrator Permissions:[/COLOR] 0
@@ -365,7 +366,7 @@ This is a human-readable summary of the Legal Code (the full license).
      [*][COLOR="dimgray"]New Cronjobs:[/COLOR] 0
      --------------------------------
      [*][COLOR="dimgray"]Installation Level:[/COLOR] V.Easy
-     [*][COLOR="dimgray"]Installation Time:[/COLOR] ~10 seconds
+     [*][COLOR="dimgray"]Installation Time:[/COLOR] ~15 seconds
 [/LIST]
 
 
