@@ -220,6 +220,7 @@ $vbulletin->db->show_errors();
 						<td><div class="imagebutton" id="{$editorid}_cmd_undo"><img src="$stylevar[imgdir_editor]/undo.gif" width="21" height="20" alt="$vbphrase[undo]" /></div></td>
 						<td><div class="imagebutton" id="{$editorid}_cmd_redo"><img src="$stylevar[imgdir_editor]/redo.gif" width="21" height="20" alt="$vbphrase[redo]" /></div></td>
 					</if>
+					<if condition="$show['basicbbcodeonly']"><!-- phpkd_vbaqr_extra --></if>
 
 					<td width="100%">&nbsp;</td>
 					<if condition="is_browser('ie') AND !is_browser('mac')"><td><div class="imagebutton" id="{$editorid}_cmd_spelling"><img src="$stylevar[imgdir_editor]/spelling.gif" width="21" height="20" alt="$vbphrase[check_spelling]" /></div></td></if>
@@ -290,6 +291,7 @@ $vbulletin->db->show_errors();
 					<td><img src="$stylevar[imgdir_editor]/separator.gif" width="6" height="20" alt="" /></td>	
 					$vBeditTemplate[extrabuttons]
 				</if>
+				<if condition="!$show['basicbbcodeonly']"><!-- phpkd_vbaqr_extra --></if>
 			</tr>
 			</table>
 			</if>
@@ -468,6 +470,7 @@ var QR_EditorID = '$editorid';
 					<img src="{vb:stylevar imgdir_editor}/redo.png" class="imagebutton" id="{vb:raw editorid}_cmd_redo" width="20" height="20" alt="{vb:rawphrase redo}" />
 				</li>
 				</vb:if>
+				<vb:if condition="$show['basicbbcodeonly']"><!-- phpkd_vbaqr_extra --></vb:if>
 
 				<vb:if condition="is_browser('ie') AND !is_browser('mac')">
 					<li>
@@ -544,8 +547,9 @@ var QR_EditorID = '$editorid';
 						</vb:each>
 					</li>
 				</vb:if>
+				<vb:if condition="!$show['basicbbcodeonly']"><!-- phpkd_vbaqr_extra --></vb:if>
 			</ul>
-		</vb:if>
+			</vb:if>
 		</div>
 		<div class="editor_textbox_container">
 			<div class="editor_textbox quickreply <vb:if condition="$smiliebox">editor_textbox_smilie</vb:if>">
