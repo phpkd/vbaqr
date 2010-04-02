@@ -1340,7 +1340,7 @@ if ($phpkd_vbaqr['vbversion'] == '38x' AND $show['quickcomment'] AND $this->temp
 		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ vB4.0.x Smilies Under Editor ]]]></title>
 			<hookname>parse_templates</hookname>
-			<phpcode><![CDATA[if (substr(SIMPLE_VERSION, 0, 1) >= 4 AND $show['phpkd_vbaqr_active'] AND $vbulletin->options['phpkd_vbaqr_smtotal'] > 0 AND $show['phpkd_vbaqr_thoption_smbdown'])
+			<phpcode><![CDATA[if ($phpkd_vbaqr['vbversion'] == '40x' AND $show['phpkd_vbaqr_active'] AND $vbulletin->options['phpkd_vbaqr_smtotal'] > 0 AND $show['phpkd_vbaqr_thoption_smbdown'])
 {
 	$vbulletin->templatecache['headinclude'] = str_replace('editor.css', 'editor.css,phpkd_vbaqr_40x_smilieeditor.css', $vbulletin->templatecache['headinclude']);
 }]]></phpcode>
