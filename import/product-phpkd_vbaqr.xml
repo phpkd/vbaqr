@@ -1766,7 +1766,7 @@ Select "Include All Users" for the product to take effect on all users (<strong>
 			<phrase name="setting_phpkd_vbaqr_inex_users_ids_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If you've chosen "Include Specific Users" OR "Exclude Specific Users" from the above setting, then you've to enter those specified user IDs here in this setting's field. Please enter user IDs separated with commas.]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_inex_users_ids_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Included/Excluded Users]]></phrase>
 			<phrase name="setting_phpkd_vbaqr_inex_users_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Include/Exclude Users]]></phrase>
-			<phrase name="setting_phpkd_vbaqr_location_desc" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Where do you wish to activate this product? You've four valid locations this product can be applied on & take affect:
+			<phrase name="setting_phpkd_vbaqr_location_desc" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Where do you wish to activate this product? You've multiple valid locations this product can be applied on & take affect:
 <ol>
 	<li>Thread Quick Reply</li>
 	<li>Private Message Quick Reply</li>
