@@ -1023,7 +1023,7 @@ else if ($setting['optioncode'] == 'phpkd_vbaqr_styles')
 	$vbulletin->templatecache['blog_show_entry'] = str_replace($phpkd_vbaqr_search, $phpkd_vbaqr_replace, $vbulletin->templatecache['blog_show_entry']);
 }]]></phpcode>
 		</plugin>
-		<plugin active="1" executionorder="5">
+		<plugin active="1" executionorder="4">
 			<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate' [ Main process ]]]></title>
 			<hookname>editor_toolbar_end</hookname>
 			<phpcode><![CDATA[if ($show['phpkd_vbaqr_active'] AND in_array($editor_type, array('qr', 'qr_small', 'qr_pm')) AND $toolbartype)
