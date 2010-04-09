@@ -11,7 +11,7 @@ Name:
 
 Version:
 ~~~~~~~~~
-     * 4.0.110
+     * 4.0.111
 
 
 Description:
@@ -304,6 +304,9 @@ History:
 	+ Bug Fix: Uncached templates when disabling smilie box (http://forum.phpkd.net/project.php?issueid=60).
 	+ Bug Fix: Private message quick reply doesn't quote original PM (http://forum.phpkd.net/project.php?issueid=70).
 	+ Miscellaneous optimizations & improvements.
+     * v4.0.111 07/04/2010 03:03 AM UTC: Maintenance Release (public)
+	+ Miscellaneous optimizations & improvements.
+	+ Added compatibility for upcoming integrated products.
 
 
 Screen Shots:
@@ -357,4 +360,4 @@ Recent Products:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-$Version: 4.0.110 $ - $Id$
+$Version: 4.0.111 $ - $Id$

@@ -16,7 +16,7 @@
 
 
 [B]Name:[/B] PHPKD - Advanced Quick Reply 'Ultimate'
-[B]Version:[/B] 4.0.110
+[B]Version:[/B] 4.0.111
 
 [B]Description:[/B] This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Attachments / Smilies / Management ], (threads, blogs, social groups, albums, visitor messages, private messages) [customizable].
 
@@ -337,6 +337,11 @@ This is a human-readable summary of the Legal Code (the full license).
 	[*][URL="http://forum.phpkd.net/project.php?issueid=60"]Bug Fix: Uncached templates when disabling smilie box.[/URL]
 	[*][URL="http://forum.phpkd.net/project.php?issueid=70"]Bug Fix: Private message quick reply doesn't quote original PM.[/URL]
 	[*]Miscellaneous optimizations & improvements.
+     [/LIST]
+     [*][B]v4.0.111[/B] 07/04/2010 03:03 AM UTC: Maintenance Release (public)
+     [LIST=1]
+	[*]Miscellaneous optimizations & improvements.
+	[*]Added compatibility for upcoming integrated products.
      [/LIST]
 [/LIST]
 

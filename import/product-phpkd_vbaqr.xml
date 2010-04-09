@@ -3,10 +3,11 @@
 <product productid="phpkd_vbaqr" active="1">
 	<title><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></title>
 	<description><![CDATA[This product extends 'Quick Reply' functionality to allow all "Advanced Editor" options [ All Built-In BBCodes / Attachments / Smilies / Management ], (threads, blogs, social groups, albums, visitor messages, private messages) [customizable].]]></description>
-	<version><![CDATA[4.0.110]]></version>
-	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
-	<author><![CDATA[$Author$]]></author>
+	<version><![CDATA[4.0.111]]></version>
+	<simpleversion><![CDATA[40111]]></simpleversion>
 	<revision><![CDATA[$Revision$]]></revision>
+	<vendor><![CDATA[$Vendor: PHP KingDom (PHPKD) $]]></vendor>
+	<author><![CDATA[$Author$]]></author>
 	<released><![CDATA[$Date$]]></released>
 	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbaqr/]]></url>
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbaqr/]]></versioncheckurl>
@@ -41,14 +42,23 @@ if ($vbulletin->db->num_rows($existingprods))
 // ######################################################################
 
 $vbulletin->db->hide_errors();
-// Import debug data in appropriate field
-$phpkdinfo = $info;
-unset($phpkdinfo['description']);
-$phpkdinfo['author'] = trim(substr(substr($arr['author'], 8), 0, -1));
-$phpkdinfo['vendor'] = trim(substr(substr($arr['vendor'], 8), 0, -1));
-$phpkdinfo['revision'] = trim(substr(substr($arr['revision'], 10), 0, -1));
-$phpkdinfo['released'] = trim(substr(substr($arr['released'], 6), 0, -1));
-$phpkdinfo['installdateline'] = TIMENOW;
+
+// Import debug data in appropriate fields
+$phpkdinfo = array(
+	'productid'       => $info['productid'],
+	'title'           => $info['title'],
+	'version'         => $info['version'],
+	'simpleversion'   => $arr['simpleversion'],
+	'revision'        => trim(substr(substr($arr['revision'], 10), 0, -1)),
+	'author'          => trim(substr(substr($arr['author'], 10), 0, -1)),
+	'vendor'          => trim(substr(substr($arr['vendor'], 10), 0, -1)),
+	'released'        => trim(substr(substr('$Date$', 6), 0, -1)),
+	'url'             => $info['url'],
+	'versioncheckurl' => $info['versioncheckurl'],
+	'extradetails'    => str_replace('url', 'info', $info['url']),
+	'installdateline' => TIMENOW
+);
+
 if ($vbulletin->options['phpkd_free40_data'])
 {
 	$holder = unserialize($vbulletin->options['phpkd_free40_data']);
@@ -135,7 +145,7 @@ $vbulletin->db->show_errors();
 		</code>
 	</codes>
 	<templates>
-		<template name="phpkd_vbaqr_38x_editor" templatetype="template" date="1269336649" username="PHPKD" version="4.0.110"><![CDATA[<!-- $phpkd_vbaqr[title] -->
+		<template name="phpkd_vbaqr_38x_editor" templatetype="template" date="1270848707" username="PHPKD" version="4.0.111"><![CDATA[<!-- $phpkd_vbaqr[title] -->
 <table cellpadding="0" cellspacing="0" border="0" style="width: {$phpkd_vbaqr_formwidth}px">
 <tr>
 	<td id="$editorid" class="vBulletin_editor" width="100%">
@@ -350,7 +360,7 @@ var QR_EditorID = '$editorid';
 <else />
 <div id="smiliebox" style="display:none"></div>
 </if>]]></template>
-		<template name="phpkd_vbaqr_38x_tools" templatetype="template" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[					<script type="text/javascript">
+		<template name="phpkd_vbaqr_38x_tools" templatetype="template" date="1270848707" username="PHPKD" version="4.0.111"><![CDATA[					<script type="text/javascript">
 					<!--
 					// DEFINE IMPORTANT VARS
 					phpkd_vbaqr_vbversion = "$phpkd_vbaqr[vbversion]";
@@ -385,12 +395,12 @@ var QR_EditorID = '$editorid';
 					var IMGDIR_BUTTON = "$stylevar[imgdir_button]";
 					//-->
 					</script>
-					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb=$vboptions[simpleversion]&amp;v=$phpkd_vbaqr[version]"></script>
+					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb=$vboptions[simpleversion]&amp;v=$phpkd_vbaqr[simpleversion]"></script>
 
 					$attachmentoption
 
 					$threadmanagement]]></template>
-		<template name="phpkd_vbaqr_40x_editor" templatetype="template" date="1269336649" username="PHPKD" version="4.0.110"><![CDATA[<!-- {vb:raw phpkd_vbaqr.title} -->
+		<template name="phpkd_vbaqr_40x_editor" templatetype="template" date="1270848707" username="PHPKD" version="4.0.111"><![CDATA[<!-- {vb:raw phpkd_vbaqr.title} -->
 <!-- phpkd_vbaqr_40x_editor_replacement -->
 <div id="{vb:raw editorid}" class="blockrow texteditor">
 
@@ -617,7 +627,7 @@ var QR_EditorID = '$editorid';
 {
 	margin-{vb:stylevar right}: 0px;
 }]]></template>
-		<template name="phpkd_vbaqr_40x_tools" templatetype="template" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[					<script type="text/javascript">
+		<template name="phpkd_vbaqr_40x_tools" templatetype="template" date="1270848707" username="PHPKD" version="4.0.111"><![CDATA[					<script type="text/javascript">
 					<!--
 					// DEFINE IMPORTANT VARS
 					phpkd_vbaqr_vbversion = "{vb:raw phpkd_vbaqr.vbversion}";
@@ -648,7 +658,7 @@ var QR_EditorID = '$editorid';
 					vbphrase["stick_thread"]         = "{vb:rawphrase phpkd_vbaqr_stick_thread}";
 					//-->
 					</script>
-					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb={vb:raw vboptions.simpleversion}&amp;v={vb:raw phpkd_vbaqr.version}"></script>
+					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb={vb:raw vboptions.simpleversion}&amp;v={vb:raw phpkd_vbaqr.simpleversion}"></script>
 
 					{vb:raw attachmentoption}
 
