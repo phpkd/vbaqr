@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<language name="MASTER LANGUAGE" vbversion="4.0.2" product="phpkd_vbaqr" type="master">
+	<skippedgroups>
+		<skippedgroup>cphelptext</skippedgroup>
+	</skippedgroups>
+	<phrasetype name="Control Panel Options" fieldname="cpoption">
+		<phrase name="phpkd_vbaqr_bbcode_ccp" date="1264508088" username="PHPKD" version="4.0.100"><![CDATA[Allow Copy, Cut & Past]]></phrase>
+		<phrase name="phpkd_vbaqr_bbcode_unredo" date="1264508114" username="PHPKD" version="4.0.100"><![CDATA[Allow Undo & Redo]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_close" date="1264509618" username="PHPKD" version="4.0.100"><![CDATA[Thread Manage: Close]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_dissm" date="1264509666" username="PHPKD" version="4.0.100"><![CDATA[Disable Smilies]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_parselinks" date="1264510439" username="PHPKD" version="4.0.100"><![CDATA[Parse Links]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_quote" date="1265276087" username="PHPKD" version="4.0.100"><![CDATA[<span title="3.8.x Only">Quote message in reply</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_showsig" date="1265157551" username="PHPKD" version="4.0.100"><![CDATA[Show Signature]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_stick" date="1264509632" username="PHPKD" version="4.0.100"><![CDATA[Thread Manage: Stick]]></phrase>
+		<phrase name="phpkd_vbaqr_gnoption_aqpm" date="1269336649" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can auto quote private message text in the quick reply by activating this option.">Auto Quote PM in QR</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_all" date="1264429620" username="PHPKD" version="4.0.100"><![CDATA[Include All Forums]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_ex" date="1264429649" username="PHPKD" version="4.0.100"><![CDATA[Exclude Specific Forums]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_in" date="1264429634" username="PHPKD" version="4.0.100"><![CDATA[Include Specific Forums]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_all" date="1264429135" username="PHPKD" version="4.0.100"><![CDATA[Include All Usergroups]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_ex" date="1264429159" username="PHPKD" version="4.0.100"><![CDATA[Exclude Specific Usergroups]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_in" date="1264429148" username="PHPKD" version="4.0.100"><![CDATA[Include Specific Usergroups]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_all" date="1264428993" username="PHPKD" version="4.0.100"><![CDATA[Include All Users]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_ex" date="1264429019" username="PHPKD" version="4.0.100"><![CDATA[Exclude Specific Users]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_in" date="1264429006" username="PHPKD" version="4.0.100"><![CDATA[Include Specific Users]]></phrase>
+		<phrase name="phpkd_vbaqr_location_bg" date="1269247357" username="PHPKD" version="4.0.110"><![CDATA[Blog Comments]]></phrase>
+		<phrase name="phpkd_vbaqr_location_gp" date="1265046811" username="PHPKD" version="4.0.100"><![CDATA[Social Group Picture Comment]]></phrase>
+		<phrase name="phpkd_vbaqr_location_pc" date="1264509847" username="PHPKD" version="4.0.100"><![CDATA[Album Picture Comment]]></phrase>
+		<phrase name="phpkd_vbaqr_location_pm" date="1264509870" username="PHPKD" version="4.0.100"><![CDATA[Private Message Quick Reply]]></phrase>
+		<phrase name="phpkd_vbaqr_location_qr" date="1264509821" username="PHPKD" version="4.0.100"><![CDATA[Thread Quick Reply]]></phrase>
+		<phrase name="phpkd_vbaqr_location_sg" date="1265046033" username="PHPKD" version="4.0.100"><![CDATA[Social Group Comment]]></phrase>
+		<phrase name="phpkd_vbaqr_location_vm" date="1264509836" username="PHPKD" version="4.0.100"><![CDATA[Profile Visitor Message]]></phrase>
+		<phrase name="phpkd_vbaqr_select_styles" date="1264472426" username="PHPKD" version="4.0.100"><![CDATA[Select Style(s)]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_attach" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display 'Attachments' Buttons/Options in the Quick Reply by activating this option.">Allow attachments</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_collapsed" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="3.8.x Only: You can collapse 'Quick Reply' by default by activating this option.">Collapse Quick Reply</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_dissmilies" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display 'Disable Smilies' Option in the Quick Reply by activating this option.">Display "Disable Smilies" option</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_hideexts" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can hide 'Attachments' Extensions in the Quick Reply by activating this option.">Hide Attachments' Extensions</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_manage" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display 'Thread Management Tools' in the Quick Reply by activating this option.">Thread Management Tools</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_quote" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="3.8.x Only: You can display 'Quote message in reply' option in the Quick Reply by activating this option.">Quote message in reply</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_signature" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display 'Show your Signature' option in the Quick Reply by activating this option.">Show Signature</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_smbdown" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display the smilie box below editor rather than beside it by activating this option.">Smiliebox Below Editor</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_title" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display the 'Title' field in the Quick Reply by activating this option.">Display "Title" Field</span>]]></phrase>
+	</phrasetype>
+	<phrasetype name="Show Thread" fieldname="showthread">
+		<phrase name="phpkd_vbaqr_close_thread" date="1264592723" username="PHPKD" version="4.0.100"><![CDATA[Close Thread]]></phrase>
+		<phrase name="phpkd_vbaqr_open_thread" date="1264592742" username="PHPKD" version="4.0.100"><![CDATA[Open Thread]]></phrase>
+		<phrase name="phpkd_vbaqr_stick_thread" date="1264592763" username="PHPKD" version="4.0.100"><![CDATA[Stick Thread]]></phrase>
+		<phrase name="phpkd_vbaqr_unstick_thread" date="1264592778" username="PHPKD" version="4.0.100"><![CDATA[Unstick Thread]]></phrase>
+	</phrasetype>
+	<phrasetype name="Style Tools" fieldname="style">
+		<phrase name="phpkd_vbaqr" date="1264569652" username="PHPKD" version="4.0.100"><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></phrase>
+	</phrasetype>
+	<phrasetype name="vBulletin Settings" fieldname="vbsettings">
+		<phrase name="setting_phpkd_vbaqr_active_desc" date="1264428826" username="PHPKD" version="4.0.100"><![CDATA[Choose whether the product "PHPKD - Advanced Quick Reply 'Ultimate'" is active or not (Global On/Off Switch).]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_active_title" date="1264428826" username="PHPKD" version="4.0.100"><![CDATA[Product Active]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_bbcode_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[This setting allows you to enable and disable various built-in BBCode Tags in the "Advanced Quick Reply 'Ultimate'".<br /><br />
+Disabling a BBCode will <strong>NOT</strong> prevent it from working in the "Advanced Quick Reply 'Ultimate'", but only hide it's relevant button from the editor.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_bbcode_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Enabled Built-in BB Code Tags]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_checked_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[You can set the default check status for each option of the "Advanced Quick Reply 'Ultimate'", any checked option here will be checked by default within forums.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_checked_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Thread Options: Checked by default]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_gnoption_desc" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[You can control general options of "Advanced Quick Reply 'Ultimate'" through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_gnoption_title" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[General Options: Enable/Disable Options]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[You can specify certain forums to have this product's effect, or to exclude others from being participated at all.<br />
+You've three options to choose from:<br />
+<ul>
+	<li><strong>Include All Forums</strong></li>
+	<li><strong>Include Specific Forums</strong></li>
+	<li><strong>Exclude Specific Forums</strong></li>
+</ul>
+Select "Include All Forums" for the product to take effect on all forums (<strong>DEFAULT</strong>), or select "Include Specific Forums" for the product to take effect on certain forums only -defined in the following setting-, or select "Exclude Specific Forums" for the product <strong>NOT</strong> to take effect on certain forums -defined in the following setting-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_ids_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If you've chosen "Include Specific Forums" OR "Exclude Specific Forums" from the above setting, then you've to enter those specified forum IDs here in this setting's field. Please enter forum IDs separated with commas.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_ids_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Included/Excluded Forums]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Include/Exclude Forums]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[You can specify certain usergroups to have this product's effect, or to exclude others from being participated at all.<br />
+You've three options to choose from:<br />
+<ul>
+	<li><strong>Include All Usergroups</strong></li>
+	<li><strong>Include Specific Usergroups</strong></li>
+	<li><strong>Exclude Specific Usergroups</strong></li>
+</ul>
+Select "Include All Usergroups" for the product to take effect on all usergroups (<strong>DEFAULT</strong>), or select "Include Specific Usergroups" for the product to take effect on certain usergroups only -defined in the following setting-, or select "Exclude Specific Usergroups" for the product <strong>NOT</strong> to take effect on certain usergroups -defined in the following setting-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_ids_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If you've chosen "Include Specific Usergroups" OR "Exclude Specific Usergroups" from the above setting, then you've to enter those specified usergroup IDs here in this setting's field. Please enter usergroup IDs separated with commas.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_ids_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Included/Excluded Usergroups]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Include/Exclude Usergroups]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[You can specify certain users to have this product's effect, or to exclude others from being participated at all.<br />
+You've three options to choose from:<br />
+<ul>
+	<li><strong>Include All Users</strong></li>
+	<li><strong>Include Specific Users</strong></li>
+	<li><strong>Exclude Specific Users</strong></li>
+</ul>
+Select "Include All Users" for the product to take effect on all users (<strong>DEFAULT</strong>), or select "Include Specific Users" for the product to take effect on certain users only -defined in the following setting-, or select "Exclude Specific Users" for the product <strong>NOT</strong> to take effect on certain users -defined in the following setting-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_ids_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If you've chosen "Include Specific Users" OR "Exclude Specific Users" from the above setting, then you've to enter those specified user IDs here in this setting's field. Please enter user IDs separated with commas.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_ids_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Included/Excluded Users]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Include/Exclude Users]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_location_desc" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Where do you wish to activate this product? You've multiple valid locations this product can be applied on & take affect:
+<ol>
+	<li>Thread Quick Reply</li>
+	<li>Private Message Quick Reply</li>
+	<li>Profile Visitor Message</li>
+	<li>Album Picture Comment</li>
+	<li>Social Group Comment</li>
+	<li>Social Group Picture Comment</li>
+	<li>Blog Comments</li>
+</ol>]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_location_title" date="1269247465" username="PHPKD" version="4.0.110"><![CDATA[Applied locations]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smcolumns_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[If the smiliebox is enabled, how many smilies would you like to be displayed per row of the box?<br />
+Note: positive integer values allowed. Minimum value is one "1".]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smcolumns_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Smiliebox Smilies Per Row]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smtotal_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[How many smilies would you like to be displayed in the smiliebox before the user is prompted to click for the more smilies popup window?<br />
+Set this value to 0 if you would like to hide the clickable smiliebox completely.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smtotal_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Smiliebox Total Smilies]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_styleids_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[You can enable this product on certain styles only & keep it disabled for others, just select the styles you wish this product to take affect on. For multiple selecting press 'CTRL' & keep holding it while selecting.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_styleids_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Affected Styles]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_thoption_desc" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[You can control all "Advanced Quick Reply 'Ultimate'" options through this setting, check the check box beside the appropriate option to activate it, or un-check it to deactivate.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_thoption_title" date="1269335581" username="PHPKD" version="4.0.110"><![CDATA[Thread Options: Enable/Disable Options]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_wysiwyg_smtotal_desc" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[How many smilies would you like to display in the WYSIWYG popup smilie menu before the 'show all smilies' link is displayed.<br />
+Set this value to 0 if you would like to hide the popup smilie menu completely.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_wysiwyg_smtotal_title" date="1269336845" username="PHPKD" version="4.0.110"><![CDATA[Smilie Menu Total Smilies]]></phrase>
+		<phrase name="settinggroup_phpkd_vbaqr" date="1264428732" username="PHPKD" version="4.0.100"><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></phrase>
+	</phrasetype>
+</language>

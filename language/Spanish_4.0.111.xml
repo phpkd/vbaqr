@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<language name="MASTER LANGUAGE" vbversion="4.0.2" product="phpkd_vbaqr" type="master">
+	<skippedgroups>
+		<skippedgroup>cphelptext</skippedgroup>
+	</skippedgroups>
+	<phrasetype name="Control Panel Options" fieldname="cpoption">
+		<phrase name="phpkd_vbaqr_bbcode_ccp" date="1269957249" username="Terrona" version="4.0.110"><![CDATA[permitir copiar,cortar y pegar]]></phrase>
+		<phrase name="phpkd_vbaqr_bbcode_unredo" date="1269957161" username="Terrona" version="4.0.110"><![CDATA[Permitir Deshacer & Rehacer]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_close" date="1269956961" username="Terrona" version="4.0.110"><![CDATA[permitir hilo: Cerrado]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_dissm" date="1269957078" username="Terrona" version="4.0.110"><![CDATA[Deshabilitar Smilies]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_parselinks" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[Analizar vínculos]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_quote" date="1269773619" username="Terrona" version="4.0.110"><![CDATA[<span title="3.8.x Only">Permitir Quote en respuesta</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_showsig" date="1269773649" username="Terrona" version="4.0.110"><![CDATA[Mostrar firma]]></phrase>
+		<phrase name="phpkd_vbaqr_checked_stick" date="1269957035" username="Terrona" version="4.0.110"><![CDATA[Permitir hilos: pinchados]]></phrase>
+		<phrase name="phpkd_vbaqr_gnoption_aqpm" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can auto quote private message text in the quick reply by activating this option.">Auto Quote PM in QR</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_all" date="1269775117" username="Terrona" version="4.0.110"><![CDATA[incluye todos los foros]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_ex" date="1269775205" username="Terrona" version="4.0.110"><![CDATA[Excluye foros específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_forums_in" date="1269775169" username="Terrona" version="4.0.110"><![CDATA[Incluye foros específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_all" date="1269774976" username="Terrona" version="4.0.110"><![CDATA[Incluye todos los grupos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_ex" date="1269775052" username="Terrona" version="4.0.110"><![CDATA[Excluye grupos específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_usergroups_in" date="1269775014" username="Terrona" version="4.0.110"><![CDATA[Incluye grupos específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_all" date="1269774819" username="Terrona" version="4.0.110"><![CDATA[Incluir todos los user]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_ex" date="1269774935" username="Terrona" version="4.0.110"><![CDATA[Excluye user específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_inex_users_in" date="1269774863" username="Terrona" version="4.0.110"><![CDATA[Incluir user específicos]]></phrase>
+		<phrase name="phpkd_vbaqr_location_bg" date="1269773285" username="Terrona" version="4.0.110"><![CDATA[Comentarios de blog]]></phrase>
+		<phrase name="phpkd_vbaqr_location_gp" date="1269773232" username="Terrona" version="4.0.110"><![CDATA[Social, Grupo Imagen Comentario]]></phrase>
+		<phrase name="phpkd_vbaqr_location_pc" date="1269773108" username="Terrona" version="4.0.110"><![CDATA[Album fotográfico Comentario]]></phrase>
+		<phrase name="phpkd_vbaqr_location_pm" date="1269773016" username="Terrona" version="4.0.110"><![CDATA[Mensaje Privado Respuesta Rápida]]></phrase>
+		<phrase name="phpkd_vbaqr_location_qr" date="1269772874" username="Terrona" version="4.0.110"><![CDATA[respuesta rapida]]></phrase>
+		<phrase name="phpkd_vbaqr_location_sg" date="1269773144" username="Terrona" version="4.0.110"><![CDATA[Grupo Social Comentario]]></phrase>
+		<phrase name="phpkd_vbaqr_location_vm" date="1269773060" username="Terrona" version="4.0.110"><![CDATA[Perfil de los visitantes de mensajes]]></phrase>
+		<phrase name="phpkd_vbaqr_select_styles" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[Seleccione Estilos]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_attach" date="1269773445" username="Terrona" version="4.0.110"><![CDATA[<span title="You can display 'Attachments' Buttons/Options in the Quick Reply by activating this option.">Permitir archivos adjuntos</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_collapsed" date="1269773893" username="Terrona" version="4.0.110"><![CDATA[<span title="3.8.x Only: You can collapse 'Quick Reply' by default by activating this option.">Cerrar respuesta rapida</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_dissmilies" date="1269957078" username="Terrona" version="4.0.110"><![CDATA[<span title="You can display 'Deshabilitar Smilies' Option in the Quick Reply by activating this option.">Mostrar  "Deshabilitar Caritas"</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_hideexts" date="1269773850" username="Terrona" version="4.0.110"><![CDATA[<span title="You can hide 'Attachments' Extensions in the Quick Reply by activating this option.">Ocultar las extensiones de archivos adjuntos</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_manage" date="1269773479" username="Terrona" version="4.0.110"><![CDATA[<span title="You can display 'Herramientas de Gestión de hilo' in the Quick Reply by activating this option.">Herramientas de Gestión de hilo</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_quote" date="1269773619" username="Terrona" version="4.0.110"><![CDATA[<span title="3.8.x Only: You can display 'Permitir Quote en respuesta' option in the Quick Reply by activating this option.">Permitir Quote en respuesta</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_signature" date="1269773649" username="Terrona" version="4.0.110"><![CDATA[<span title="You can display 'Show your Signature' option in the Quick Reply by activating this option.">Mostrar firma</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_smbdown" date="1269773810" username="Terrona" version="4.0.110"><![CDATA[<span title="You can display the smilie box below editor rather than beside it by activating this option.">Mostrar caritas debajo del editor</span>]]></phrase>
+		<phrase name="phpkd_vbaqr_thoption_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[<span title="You can display the 'Title' field in the Quick Reply by activating this option.">Display "Title" Field</span>]]></phrase>
+	</phrasetype>
+	<phrasetype name="Show Thread" fieldname="showthread">
+		<phrase name="phpkd_vbaqr_close_thread" date="1269950909" username="Terrona" version="4.0.110"><![CDATA[Cerrar hilo]]></phrase>
+		<phrase name="phpkd_vbaqr_open_thread" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[Abrir el hilo]]></phrase>
+		<phrase name="phpkd_vbaqr_stick_thread" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[Stick hilo]]></phrase>
+		<phrase name="phpkd_vbaqr_unstick_thread" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[Despegue hilo]]></phrase>
+	</phrasetype>
+	<phrasetype name="Style Tools" fieldname="style">
+		<phrase name="phpkd_vbaqr" date="1270866429" username="PHPKD" version="4.0.100"><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></phrase>
+	</phrasetype>
+	<phrasetype name="vBulletin Settings" fieldname="vbsettings">
+		<phrase name="setting_phpkd_vbaqr_active_desc" date="1269772699" username="Terrona" version="4.0.110"><![CDATA[Seleccione si el producto "Ultimate PHPKD - Advanced Respuesta rápida '" está activo o no (Global interruptor On / Off).]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_active_title" date="1269774112" username="Terrona" version="4.0.110"><![CDATA[Producto activo ?]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_bbcode_desc" date="1269867843" username="Terrona" version="4.0.110"><![CDATA[Esta configuración le permite habilitar y deshabilitar diversas   Etiquetas BBCode en el "Ultimate avanzada Respuesta rápida '". "<br /><br />
+Deshabilitar BBCode NO le impida trabajar en el "Advanced Quick Reply 'Ultimate'",sólo es ocultar el botón correspondiente del editor.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_bbcode_title" date="1269774366" username="Terrona" version="4.0.110"><![CDATA[Habilitado incorporado Etiquetas BB Code]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_checked_desc" date="1269774002" username="Terrona" version="4.0.110"><![CDATA[Puede configurar el estado de chequeo por defecto para cada opción de la "Ultimate avanzada Respuesta rápida '", cualquier opción marcada aquí será activada por defecto en los foros.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_checked_title" date="1269774320" username="Terrona" version="4.0.110"><![CDATA[Opciones de temas: marcada por defecto]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_gnoption_desc" date="1269773965" username="Terrona" version="4.0.110"><![CDATA[Usted puede controlar las opciones generales de "Ultimate avanzada Respuesta rápida '" "a través de esta configuración, marque la casilla de verificación junto a la opción adecuada para activarlo, o desmarca a desactivar.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_gnoption_title" date="1269774279" username="Terrona" version="4.0.110"><![CDATA[Opciones generales: Habilitar / Deshabilitar Opciones]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_desc" date="1269775205" username="Terrona" version="4.0.110"><![CDATA[Puede especificar algunos foros donde tendra efecto este producto, o excluirlos .<br />
+Tienes tres opciones para elegir:<br />
+<ul>
+	<li><strong>incluye todos los foros</strong></li>
+	<li><strong>Incluye foros específicos</strong></li>
+	<li><strong>Excluye foros específicos</strong></li>
+</ul>
+Seleccione "incluye todos los foros" para el producto surta efecto en todos los foros(<strong>Por DEFECTO</strong>), o seleccione "Incluye foros específicos" para que el producto surja efecto en algunos foros sólo se define en el siguiente ajuste, o seleccione "Excluye foros específicos" para el producto<strong>NO</strong> para tener efecto en algunos foros, se define en la siguiente configuración-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_ids_desc" date="1269775205" username="Terrona" version="4.0.110"><![CDATA[Si has elegido "Incluye foros específicos" O "Excluye foros específicos" seleccionado arriba, tienes que poner las IDs de los foros en el cuadro de la derecha  IDs separadas por comas ejemplo 1,3,8.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_ids_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluido / Excluido foros]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_forums_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluir / Excluir los foros]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_desc" date="1269775052" username="Terrona" version="4.0.110"><![CDATA[Usted puede especificar ciertos foros tengan efecto de este producto, o  excluir a otros de que participen.<br />
+Tienes tres opciones para elegir:<br />
+<ul>
+	<li><strong>Incluye todos los grupos</strong></li>
+	<li><strong>Incluye grupos específicos</strong></li>
+	<li><strong>Excluye grupos específicos</strong></li>
+</ul>
+si seleccionas "Incluye todos los grupos" tendra efecto en todos los grupos (<strong>por DEFECTO</strong>), o selecciona "Incluye grupos específicos" para que el producto surta efecto sólo en determinados grupos de usuarios definidos en el siguiente ajuste, o seleccionar "Excluye grupos específicos" para el producto <strong>NO</strong> para tener efecto en algunos grupos, se define en la siguiente configuración-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_ids_desc" date="1269775052" username="Terrona" version="4.0.110"><![CDATA[Si has elegido "Incluye grupos específicos" O "Excluye grupos específicos" seleccionado arriba, tienes que poner las IDs de los grupos en el cuadro de la derecha  IDs separadas por comas ejemplo 1,3,8..]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_ids_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluidos / excluidos grupos de usuarios]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_usergroups_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluir / Excluir Grupos de Usuarios]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_desc" date="1269956799" username="Terrona" version="4.0.110"><![CDATA[Usted puede especificar ciertos grupos tengan efecto de este producto, o para excluir a otros de que participen.<br />
+Tiene tres opciones:<br />
+<ul>
+	<li><strong>Incluir todos los user</strong></li>
+	<li><strong>Incluir user específicos</strong></li>
+	<li><strong>Excluye user específicos</strong></li>
+</ul>
+Seleccione "incluye todos los usuarios" para el producto surta efecto en todos los usuarios(<strong>Por DEFECTO</strong>), o seleccione "Incluye usuarios específicos" para que el producto surja efecto en algunos usuarios sólo se define en el siguiente ajuste, o seleccione "Excluye usuarios específicos" para el producto<strong>NO</strong> para tener efecto en algunos usuarios, se define en la siguiente configuración-.-.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_ids_desc" date="1269774935" username="Terrona" version="4.0.110"><![CDATA[If Si has elegido "Incluir user específicos" O "Excluye user específicos" seleccionado arriba, tienes que poner las IDs de los usuarios en el cuadro de la derecha  IDs separadas por comas ejemplo 1,3,8..]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_ids_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluido / Excluido usuarios]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_inex_users_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Incluir / Excluir usuarios]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_location_desc" date="1269773285" username="Terrona" version="4.0.110"><![CDATA[¿Dónde desea activar este producto? Has cuatro ubicaciones válidas de este producto puede ser aplicado en y surjan efecto:.
+<ol>
+	<li>respuesta rapida</li>
+	<li>Mensaje Privado Respuesta Rápida</li>
+	<li>Perfil de los visitantes de mensajes</li>
+	<li>Album fotográfico Comentario</li>
+	<li>Grupo Social Comentario</li>
+	<li>Social, Grupo Imagen Comentario</li>
+	<li>Comentarios de blog</li>
+</ol>]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_location_title" date="1269774178" username="Terrona" version="4.0.110"><![CDATA[¿Dónde desea activar este producto?]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smcolumns_desc" date="1269956698" username="Terrona" version="4.0.110"><![CDATA[Si el smiliebox está habilitado, ¿cuántos smilies quieres que se muestre por fila de la caja?
+Nota: El número entero positivo valores permitidos. El valor mínimo es un "1"]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smcolumns_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Smiliebox caritas por fila]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smtotal_desc" date="1269956572" username="Terrona" version="4.0.110"><![CDATA[¿Cuantos smilies  le gustaría que se muestre en la smiliebox antes de que el usuario se le pide que haga clic en la ventana emergente más emoticones?
+Establezca este valor en 0 si desea ocultar el smiliebox hacer clic completamente]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_smtotal_title" date="1270866429" username="PHPKD" version="4.0.110"><![CDATA[Smiliebox total smilies]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_styleids_desc" date="1269955838" username="Terrona" version="4.0.110"><![CDATA[Puede activar este producto sólo en ciertos estilos y mantenerlo con desactivado para los demás, sólo tienes que seleccionar los estilos que desea que se muestre el producto. Para la selección de múltiples pulsa "CTRL" y seguir manteniéndolo mientras los selecciónas]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_styleids_title" date="1269955894" username="Terrona" version="4.0.110"><![CDATA[estilos elegidos]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_thoption_desc" date="1269773344" username="Terrona" version="4.0.110"><![CDATA[Usted puede controlar "todo" Ultimate avanzada Respuesta rápida ' "opciones a través de esta configuración, marque la casilla de verificación junto a la opción adecuada para activarlo, o desmarca a desactivar.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_thoption_title" date="1269774234" username="Terrona" version="4.0.110"><![CDATA[Opciones de temas: Activar / Desactivar Opciones]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_wysiwyg_smtotal_desc" date="1269956348" username="Terrona" version="4.0.110"><![CDATA[¿Cuantos  smilies  le gustaría mostrar en el menú emergente smilie WYSIWYG antes de mostrar  a todos los smilies' en la pantalla.
+Establezca este valor en 0 si desea ocultar el menú emergente smilie completamente.]]></phrase>
+		<phrase name="setting_phpkd_vbaqr_wysiwyg_smtotal_title" date="1269955955" username="Terrona" version="4.0.110"><![CDATA[Total Smilies en el Menú]]></phrase>
+		<phrase name="settinggroup_phpkd_vbaqr" date="1264428732" username="PHPKD" version="4.0.100"><![CDATA[PHPKD - Advanced Quick Reply 'Ultimate']]></phrase>
+	</phrasetype>
+</language>

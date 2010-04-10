@@ -6,8 +6,8 @@
 	<version><![CDATA[4.0.111]]></version>
 	<simpleversion><![CDATA[40111]]></simpleversion>
 	<revision><![CDATA[$Revision$]]></revision>
-	<vendor><![CDATA[$Vendor: PHP KingDom (PHPKD) $]]></vendor>
 	<author><![CDATA[$Author$]]></author>
+	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
 	<released><![CDATA[$Date$]]></released>
 	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbaqr/]]></url>
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbaqr/]]></versioncheckurl>
@@ -50,8 +50,8 @@ $phpkdinfo = array(
 	'version'         => $info['version'],
 	'simpleversion'   => $arr['simpleversion'],
 	'revision'        => trim(substr(substr($arr['revision'], 10), 0, -1)),
-	'author'          => trim(substr(substr($arr['author'], 10), 0, -1)),
-	'vendor'          => trim(substr(substr($arr['vendor'], 10), 0, -1)),
+	'author'          => trim(substr(substr($arr['author'], 8), 0, -1)),
+	'vendor'          => trim(substr(substr($arr['vendor'], 8), 0, -1)),
 	'released'        => trim(substr(substr('$Date$', 6), 0, -1)),
 	'url'             => $info['url'],
 	'versioncheckurl' => $info['versioncheckurl'],
@@ -395,7 +395,7 @@ var QR_EditorID = '$editorid';
 					var IMGDIR_BUTTON = "$stylevar[imgdir_button]";
 					//-->
 					</script>
-					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb=$vboptions[simpleversion]&amp;v=$phpkd_vbaqr[simpleversion]"></script>
+					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb=$vboptions[simpleversion]&v=$phpkd_vbaqr[simpleversion]"></script>
 
 					$attachmentoption
 
@@ -658,7 +658,7 @@ var QR_EditorID = '$editorid';
 					vbphrase["stick_thread"]         = "{vb:rawphrase phpkd_vbaqr_stick_thread}";
 					//-->
 					</script>
-					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb={vb:raw vboptions.simpleversion}&amp;v={vb:raw phpkd_vbaqr.simpleversion}"></script>
+					<script type="text/javascript" src="clientscript/phpkd_vbaqr.js?vb={vb:raw vboptions.simpleversion}&v={vb:raw phpkd_vbaqr.simpleversion}"></script>
 
 					{vb:raw attachmentoption}
 

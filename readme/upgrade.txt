@@ -31,7 +31,11 @@ firstChild.nodeValue;qr_disable_controls();qr_hide_errors();phpkd_vbaqr();
 
      4. Configure product's settings -if required-.
 
-     5. You're Done :).
+     5. [Optional] Translations: vBulletin AdminCP » Languages & Phrases » Download / Upload Languages » Import Language XML File (Make sure that your forum's Character Set is equivalent to the imported language as follow):
+	     Available translations (inside 'language' folder): English, Spanish » ISO-8859-1
+	     You can change language file's encoding before import to whatever encoding you wish/your forum works on (ex: UTF-8) using Encoding Master (http://www.elfdata.com/encodingmaster/).
+
+     6. You're Done :).
 
 
 $Version: 4.0.111 $ - $Id$

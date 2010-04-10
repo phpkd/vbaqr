@@ -195,6 +195,9 @@
 	[B]Save the modified file "clientscript/vbulletin_quick_reply.js" and upload it to it's place again (ALLOW OVERWRITE).[/B]
      [*]Import the product's XML file "product-phpkd_vbaqr.xml" from AdminCP.
      [*]Configure product's settings -if required-.
+     [*][Optional] Translations: vBulletin AdminCP » Languages & Phrases » Download / Upload Languages » Import Language XML File (Make sure that your forum's Character Set is equivalent to the imported language as follow):
+	     Available translations (inside 'language' folder): English, Spanish » ISO-8859-1
+	     You can change language file's encoding before import to whatever encoding you wish/your forum works on (ex: UTF-8) using Encoding Master (http://www.elfdata.com/encodingmaster/).
      [*]You're Done :).
 [/LIST]
 
@@ -342,6 +345,7 @@ This is a human-readable summary of the Legal Code (the full license).
      [LIST=1]
 	[*]Miscellaneous optimizations & improvements.
 	[*]Added compatibility for upcoming integrated products.
+	[*]Added Spanish translation (Thanks "Terrona").
      [/LIST]
 [/LIST]
 
@@ -349,6 +353,14 @@ This is a human-readable summary of the Legal Code (the full license).
 [U][B]Screen Shots:[/B][/U]
 [LIST]
      [*]Available down there.
+[/LIST]
+
+
+[U][B]Translations:[/B][/U]
+[LIST]
+     [*]English
+     [*]Spanish (Thanks "Terrona")
+     [*]... Submit yours :)!
 [/LIST]
 
 

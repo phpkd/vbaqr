@@ -2,6 +2,8 @@
 do_not_upload/clientscript/phpkd_vbaqr.js -text svneol=unset#text/plain
 do_not_upload/notes.txt -text svneol=unset#text/plain
 import/product-phpkd_vbaqr.xml -text svneol=unset#text/plain
+language/English_4.0.111.xml -text svneol=unset#text/plain
+language/Spanish_4.0.111.xml -text svneol=unset#text/plain
 readme/contribution.txt -text svneol=unset#text/plain
 readme/info.txt -text svneol=unset#text/plain
 readme/install.txt -text svneol=unset#text/plain
