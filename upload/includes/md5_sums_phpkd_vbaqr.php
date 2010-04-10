@@ -20,7 +20,7 @@ $md5_sums = array(
 		'phpkd_vbaqr.js' => 'fe8fb56b6eee7eb18886873aee064b42',
 	),
 	'/includes/xml' => array(
-		'bitfield_phpkd_vbaqr.xml' => '311b1a748dae604ca8685e9909e0c9f2',
+		'bitfield_phpkd_vbaqr.xml' => '863a7c85c8d51e2a7a94a485dabc58e2',
 	),
 );
 $md5_sum_softwareid = 'phpkd_vbaqr';
