@@ -310,7 +310,6 @@ History:
 	+ Miscellaneous optimizations & improvements.
      * v4.0.111 07/04/2010 03:03 AM UTC: Maintenance Release (public)
 	+ Miscellaneous optimizations & improvements.
-	+ Added compatibility for upcoming integrated products.
 	+ Added Spanish translation (Thanks "[URL="http://www.vbulletin.org/forum/member.php?u=222965"]Terrona[/URL]").
 
 
